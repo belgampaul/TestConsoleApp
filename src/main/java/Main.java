@@ -38,8 +38,8 @@ public class Main {
         for (Match match : matches.values()) {
           //System.out.println(match);
 
-          log.info("Match StrictScore: " + match.getStrictScore());
-          log.info("Match NotStrictScore: " + match.getNotStrictScore());
+          //log.info("Match StrictScore: " + match.getStrictScore());
+          //log.info("Match NotStrictScore: " + match.getNotStrictScore());
 
         }
         Thread.sleep(1000 * 10L);
@@ -64,6 +64,7 @@ public class Main {
       System.out.println(v.getStrictScore());
       if (matches.containsKey(id.toString())) {
         Match match = matches.get(id.toString());
+        match.refresh(v);
       } else {
         Match match = new Match(v);
         matches.put(id.toString(), match);

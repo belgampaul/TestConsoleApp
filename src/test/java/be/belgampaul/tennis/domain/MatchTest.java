@@ -16,13 +16,13 @@ public class MatchTest {
 
   @Before
   public void setUp() throws Exception {
-    System.out.println("");
-    System.out.println("begin setting up >>>>>");
+//    System.out.println("");
+//    System.out.println("begin setting up >>>>>");
     player1 = new Player("i1", "i1");
     player2 = new Player("i2", "i2");
     match = new Match(1L, player1, player2);
-    System.out.println("<<<<< end setting up");
-    System.out.println("");
+//    System.out.println("<<<<< end setting up");
+//    System.out.println("");
   }
 
   @After

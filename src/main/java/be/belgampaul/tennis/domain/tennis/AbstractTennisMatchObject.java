@@ -136,4 +136,8 @@ abstract public class AbstractTennisMatchObject<Parent extends ITennisMatch, Chi
     }
     return String.valueOf(score);
   }
+
+  public LinkedList<Child> getChildren() {
+    return children;
+  }
 }

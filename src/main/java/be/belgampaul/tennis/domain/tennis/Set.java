@@ -68,4 +68,14 @@ public class Set extends AbstractTennisMatchObject<Match, Game> {
     game.addPropertyChangeListener(propertyChangeListener);
     children.add(game);
   }
+
+  public Game createNextGame(Player toServe, Player toReceive) {
+    Game game = new Game(children.size() + 1L, this);
+    game.init(toServe, toReceive);
+    game.setCurrentServer(toServe);
+    game.addPropertyChangeListener(propertyChangeListener);
+
+    children.add(game);
+    return game;
+  }
 }

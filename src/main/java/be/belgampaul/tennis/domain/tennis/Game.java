@@ -23,10 +23,10 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
 
   @Override
   protected void calculateResult() {
+    System.err.println(getParent().getParent().getNotStrictScore());
     if (getWinner() != null) {
       return;
     }
-
 
     Point last = children.getLast();
     Integer scoreAfterPointPlayer1 = last.getScoreAfterPointPlayer1();
@@ -44,8 +44,31 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
   private void createNextPoint(Integer scoreAfterPointPlayer1, Integer scoreAfterPointPlayer2, int totalPointsPlayed) {
     Point point = new Point((long) (totalPointsPlayed + 1), this);
     point.init(toServeFirst, toReceiveFirst);
+    point.setCurrentServer(toServeFirst);
     point.setScoreBeforePointPlayer1(scoreAfterPointPlayer1);
     point.setScoreBeforePointPlayer2(scoreAfterPointPlayer2);
+    point.addPropertyChangeListener(propertyChangeListener);
+
+    children.add(point);
+  }
+
+  public void createNextPoint(String scoreAfterPointPlayer1, String scoreAfterPointPlayer2, Player toServe, Player toReceive) {
+    int _scoreAfterPointPlayer1 = 0;
+    int _scoreAfterPointPlayer2 = 0;
+    if (id == 13L) {
+      _scoreAfterPointPlayer1 = Integer.parseInt(scoreAfterPointPlayer1);
+      _scoreAfterPointPlayer2 = Integer.parseInt(scoreAfterPointPlayer2);
+    } else {
+      _scoreAfterPointPlayer1 = Integer.parseInt(ScoreUtils.convertAdvFormatToNumber(scoreAfterPointPlayer1));
+      _scoreAfterPointPlayer2 = Integer.parseInt(ScoreUtils.convertAdvFormatToNumber(scoreAfterPointPlayer2));
+    }
+
+    int totalPointsPlayed = _scoreAfterPointPlayer1 + _scoreAfterPointPlayer2;
+    Point point = new Point((long) (totalPointsPlayed + 1), this);
+    point.init(toServe, toReceive);
+    point.setCurrentServer(toServe);
+    point.setScoreBeforePointPlayer1(_scoreAfterPointPlayer1);
+    point.setScoreBeforePointPlayer2(_scoreAfterPointPlayer2);
     point.addPropertyChangeListener(propertyChangeListener);
 
     children.add(point);

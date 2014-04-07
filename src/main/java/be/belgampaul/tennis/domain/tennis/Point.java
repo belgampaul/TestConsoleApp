@@ -45,7 +45,7 @@ public class Point
   }
 
   public Player getCurrentServer() {
-    return null;
+    return currentServer;
   }
 
   public Point getCurrentPoint() {
@@ -103,24 +103,22 @@ public class Point
 
   public String getPlayer1ScoreAdvFormat() {
     String player1Score = getPlayer1Score();
-    switch (gameType) {
-      case STANDARD:
-        return getScoreAdvFormat(player1Score, getPlayer2Score());
-      case TIEBREAK:
+    switch (parent.getId().intValue()) {
+      case 13:
         return player1Score;
+      default:
+        return getScoreAdvFormat(player1Score, getPlayer2Score());
     }
-    return null;
   }
 
   public String getPlayer2ScoreAdvFormat() {
     String player2Score = getPlayer2Score();
-    switch (gameType) {
-      case STANDARD:
-        return getScoreAdvFormat(player2Score, getPlayer1Score());
-      case TIEBREAK:
+    switch (parent.getId().intValue()) {
+      case 13:
         return player2Score;
+      default:
+        return getScoreAdvFormat(player2Score, getPlayer1Score());
     }
-    return null;
   }
 
   private String getScoreAdvFormat(String player1Score, String player2Score) {
@@ -142,6 +140,6 @@ public class Point
       case 3:
         return "40";
     }
-    return null;
+    return "ADV";
   }
 }
