@@ -87,7 +87,7 @@
       <file leaf-file-name="Match.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="111" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.20454545" vertical-offset="1986" max-vertical-offset="5508">
+            <state line="52" column="6" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.57954544" vertical-offset="731" max-vertical-offset="5508">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5327#5328#0" expanded="true" />
@@ -814,17 +814,21 @@
       <created>1396821798533</created>
       <updated>1396821798533</updated>
       <workItem from="1396821787590" duration="267000" />
-      <workItem from="1396822155198" duration="13627000" />
+      <workItem from="1396822155198" duration="13771000" />
     </task>
     <task id="LOCAL-00001" summary="intitialCommit2&#10;">
       <created>1396839283386</created>
       <updated>1396839283386</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="intitialCommit2&#10;">
+      <created>1396839403738</created>
+      <updated>1396839403738</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13894000" />
+    <option name="totallyTimeSpent" value="14038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1179,7 +1183,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="111" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.20454545" vertical-offset="1986" max-vertical-offset="5508">
+        <state line="52" column="6" selection-start="1591" selection-end="1591" vertical-scroll-proportion="0.57954544" vertical-offset="731" max-vertical-offset="5508">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5327#5328#0" expanded="true" />
