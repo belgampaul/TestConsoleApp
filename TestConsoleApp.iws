@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a5f1cdb-dd73-4894-bf9f-70c149551896" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java" afterPath="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestConsoleApp.iml" afterPath="$PROJECT_DIR$/TestConsoleApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestConsoleApp.ipr" afterPath="$PROJECT_DIR$/TestConsoleApp.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestConsoleApp.iws" afterPath="$PROJECT_DIR$/TestConsoleApp.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xbet/Value.java" afterPath="$PROJECT_DIR$/src/main/java/com/xbet/Value.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="TestConsoleApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,7 +87,7 @@
       <file leaf-file-name="Match.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="44" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.46212122" vertical-offset="1918" max-vertical-offset="5508">
+            <state line="120" column="111" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.20454545" vertical-offset="1986" max-vertical-offset="5508">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5327#5328#0" expanded="true" />
@@ -826,12 +814,17 @@
       <created>1396821798533</created>
       <updated>1396821798533</updated>
       <workItem from="1396821787590" duration="267000" />
-      <workItem from="1396822155198" duration="13490000" />
+      <workItem from="1396822155198" duration="13627000" />
     </task>
+    <task id="LOCAL-00001" summary="intitialCommit2&#10;">
+      <created>1396839283386</created>
+      <updated>1396839283386</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13757000" />
+    <option name="totallyTimeSpent" value="13894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -895,6 +888,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="intitialCommit2&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="intitialCommit2&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1184,7 +1179,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="44" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.46212122" vertical-offset="1918" max-vertical-offset="5508">
+        <state line="120" column="111" selection-start="3779" selection-end="3779" vertical-scroll-proportion="0.20454545" vertical-offset="1986" max-vertical-offset="5508">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5327#5328#0" expanded="true" />
