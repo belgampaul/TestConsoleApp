@@ -18,6 +18,7 @@ public class Set extends AbstractTennisMatchObject<Match, Game> {
 
   @Override
   protected void calculateResult() {
+    System.err.println("a game has been won by " + children.getLast().getWinner().getLastName());
     if (getWinner() != null) {
       return;
     }

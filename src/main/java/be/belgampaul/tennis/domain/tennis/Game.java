@@ -23,7 +23,10 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
 
   @Override
   protected void calculateResult() {
-    System.err.println(getParent().getParent().getNotStrictScore());
+    if (children.size() > 0) {
+      System.err.println("a point has been won by " + children.getLast().getWinner().getLastName());
+      System.err.println("current score " + getParent().getParent().getNotStrictScore());
+    }
     if (getWinner() != null) {
       return;
     }
@@ -39,18 +42,21 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
     } else {
       createNextPoint(scoreAfterPointPlayer1, scoreAfterPointPlayer2, totalPointsPlayed);
     }
+    System.err.println("calculation result: " + getParent().getParent().getNotStrictScore());
   }
 
   private void createNextPoint(Integer scoreAfterPointPlayer1, Integer scoreAfterPointPlayer2, int totalPointsPlayed) {
     Point point = new Point((long) (totalPointsPlayed + 1), this);
-    point.init(toServeFirst, toReceiveFirst);
-    point.setCurrentServer(toServeFirst);
+    Player currentServerFromScore = getParent().getParent().getCurrentServerFromScore();
+    point.init(currentServerFromScore, currentServerFromScore.equals(getPlayer1()) ? getPlayer2() : getPlayer1());
+    point.setCurrentServer(currentServerFromScore);
     point.setScoreBeforePointPlayer1(scoreAfterPointPlayer1);
     point.setScoreBeforePointPlayer2(scoreAfterPointPlayer2);
     point.addPropertyChangeListener(propertyChangeListener);
 
     children.add(point);
   }
+
 
   public void createNextPoint(String scoreAfterPointPlayer1, String scoreAfterPointPlayer2, Player toServe, Player toReceive) {
     int _scoreAfterPointPlayer1 = 0;
@@ -75,7 +81,7 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
   }
 
   private boolean isGameFinished(Integer scoreAfterPointPlayer1, Integer scoreAfterPointPlayer2, int pointsDiffernce) {
-    switch (gameType){
+    switch (gameType) {
       case STANDARD:
         return !(pointsDiffernce < 2 || (pointsDiffernce >= 2 && scoreAfterPointPlayer1 < 4 && scoreAfterPointPlayer2 < 4));
       case TIEBREAK:
@@ -87,7 +93,7 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
   @Override
   public Point getCurrentPoint() {
     Point last = children.getLast();
-    return last.isCompleted() ? null : last;
+    return last;
   }
 
   @Override

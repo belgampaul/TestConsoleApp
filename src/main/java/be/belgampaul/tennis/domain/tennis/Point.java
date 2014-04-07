@@ -15,22 +15,22 @@ public class Point
 
   public Point(Long id, Game game, Player server, Player receiver, int scoreBeforePointPlayer1, int scoreBeforePointPlayer2, int scoreAfterPointPlayer1, int scoreAfterPointPlayer2) {
     super(id, game);
-    this.scoreBeforePointPlayer1 = Integer.valueOf(scoreBeforePointPlayer1);
-    this.scoreBeforePointPlayer2 = Integer.valueOf(scoreBeforePointPlayer2);
-    this.scoreAfterPointPlayer1 = Integer.valueOf(scoreAfterPointPlayer1);
-    this.scoreAfterPointPlayer2 = Integer.valueOf(scoreAfterPointPlayer2);
+    this.scoreBeforePointPlayer1 = scoreBeforePointPlayer1;
+    this.scoreBeforePointPlayer2 = scoreBeforePointPlayer2;
+    this.scoreAfterPointPlayer1 = scoreAfterPointPlayer1;
+    this.scoreAfterPointPlayer2 = scoreAfterPointPlayer2;
   }
 
   protected void calculateResult() {
     Player winner = getWinner();
-    Player player1 = ((Match) ((Set) ((Game) getParent()).getParent()).getParent()).getPlayer1();
-    Player player2 = ((Match) ((Set) ((Game) getParent()).getParent()).getParent()).getPlayer2();
+    Player player1 = getParent().getParent().getParent().getPlayer1();
+    Player player2 = getParent().getParent().getParent().getPlayer2();
     if (winner != null) {
       if (winner.equals(player1)) {
-        this.scoreAfterPointPlayer1 = Integer.valueOf(this.scoreBeforePointPlayer1.intValue() + 1);
+        this.scoreAfterPointPlayer1 = this.scoreBeforePointPlayer1 + 1;
         this.scoreAfterPointPlayer2 = this.scoreBeforePointPlayer2;
       } else if (winner.equals(player2)) {
-        this.scoreAfterPointPlayer2 = Integer.valueOf(this.scoreBeforePointPlayer2.intValue() + 1);
+        this.scoreAfterPointPlayer2 = this.scoreBeforePointPlayer2 + 1;
         this.scoreAfterPointPlayer1 = this.scoreBeforePointPlayer1;
       }
     }
@@ -89,7 +89,7 @@ public class Point
   }
 
   public String getPlayerScore(Player player) {
-    if (isCompleted().booleanValue()) {
+    if (isCompleted()) {
       return "0";
     }
     if (player.equals(getPlayer1())) {
@@ -141,5 +141,16 @@ public class Point
         return "40";
     }
     return "ADV";
+  }
+
+  @Override
+  protected void validateWinner(Player winner) {
+    if (currentServer == null) {
+      currentServer = getParent().getParent().getParent().getPreviousServerFromScore();
+    }
+    if (currentServer == null) {
+      throw new UnsupportedOperationException("current server is unkown. unable to change winner.");
+    }
+    super.validateWinner(winner);
   }
 }

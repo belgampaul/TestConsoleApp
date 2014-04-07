@@ -36,7 +36,7 @@ public class Set extends AbstractTennisMatchObject {
 
   @Override
   public Boolean isCompleted() {
-    return isCompleted;
+    return getWinner() != null;
   }
 
   public int getTotalPointsPlayed() {

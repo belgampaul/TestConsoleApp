@@ -36,16 +36,20 @@ abstract public class AbstractTennisObject<Parent> extends DomainObject implemen
   }
 
   final public void setWinner(Player winner) {
+    validateWinner(winner);
+    this.winner = winner;
+    calculateResult();
+    changes.firePropertyChange("winner", null /*no winner before*/, winner);
+  }
+
+  protected void validateWinner(Player winner) {
     if (this.winner != null) {
-      throw new UnsupportedOperationException("The " + this.getClass().getSimpleName() + " has already a winner " + winner);
+//      throw new UnsupportedOperationException("The " + this.getClass().getSimpleName() + " has already a winner " + winner);
     }
 
     if (winner == null) {
       throw new UnsupportedOperationException(this.getClass().getSimpleName() + " winner cannot be null");
     }
-    this.winner = winner;
-    calculateResult();
-    changes.firePropertyChange("winner", null /*no winner before*/, winner);
   }
 
   protected abstract void calculateResult();

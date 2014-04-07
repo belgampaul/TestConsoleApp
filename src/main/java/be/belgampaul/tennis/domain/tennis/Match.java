@@ -4,18 +4,20 @@ import be.belgampaul.tennis.domain.ETennisGameType;
 import be.belgampaul.tennis.domain.Player;
 import com.xbet.Value;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Match
-    extends AbstractTennisMatchObject<Tournament, Set> {
+public class Match extends AbstractTennisMatchObject<Tournament, Set> {
+  //logger
+  private static final Logger log = Logger.getLogger(Match.class);
+
   private Player player1;
   private Player player2;
-  private String currentScoreAdvFormat;
-  private String previousScoreAdvFormat;
+  private Scoreboard scoreboard;
+
 
   public Match(Long id, Tournament tournament, Player player1, Player player2) {
     super(id, tournament);
@@ -26,11 +28,14 @@ public class Match
 
   public Match(Value v) {
     super(v.getId().longValue(), null);
-    currentScoreAdvFormat = v.getStrictScore();
     this.player1 = new Player(v.getOpp1(), "");
     this.player2 = new Player(v.getOpp2(), "");
-    String strictScore = v.getStrictScore();
 
+    scoreboard = new Scoreboard(this);
+    scoreboard.setCurrentScoreAdvFormat(v.getStrictScore());
+
+    String strictScore = v.getStrictScore();
+    System.err.println(scoreboard.getCurrentScoreBoardWithPlayers());
     List<String> scores = Arrays.asList(strictScore.split(";"));
     int ms1 = Integer.parseInt(scores.get(0).split(":")[0]);
     int ms2 = Integer.parseInt(scores.get(0).split(":")[1]);
@@ -60,6 +65,10 @@ public class Match
         int cnt = 0;
         cnt = addNewGames(ss1, set, children1, cnt, player1);
         cnt = addNewGames(ss2, set, children1, cnt, player2);
+        Player setWinner = ss1 == 7 || (ss1 == 6 && ss2 < 5) ? player1 : ss2 == 7 || (ss2 == 6 && ss1 < 5) ? player2 : null;
+        if (setWinner != null) {
+          set.setWinner(setWinner);
+        }
         children.add(set);
       }
     }
@@ -99,6 +108,9 @@ public class Match
   }
 
   private Player getCurrentReceiver() {
+    if (currentServer == null) {
+      return null;
+    }
     return currentServer.equals(player1) ? player2 : player1;
   }
 
@@ -113,19 +125,36 @@ public class Match
 
   public boolean refresh(Value matchFromJsonData) {
     String strictScoreJsonData = matchFromJsonData.getStrictScore();
-    if (strictScoreJsonData.equals(currentScoreAdvFormat)) {
+    if (scoreboard.setCurrentScoreAdvFormat(strictScoreJsonData)) {
       return false;
     } else {
-      previousScoreAdvFormat = currentScoreAdvFormat;
-      currentScoreAdvFormat = strictScoreJsonData;
-
-      Player winner = findPointWinner();
+      System.err.println("score should be updated");
+      Player winner = scoreboard.findPreviousPointWinner();
       if (winner != null) {
         setCurrentPointWinner(winner);
+        log.debug("NotSctritScore" + getNotStrictScore());
         return true;
       }
     }
     return false;
+  }
+
+  public Player getPreviousServerFromScore() {
+    Player previousServerFromScore = null;
+    if (scoreboard.getPreviousScoreAdvFormat() != null && scoreboard.getCurrentScoreAdvFormat() != null) {
+      String gameScore = scoreboard.getPreviousScoreAdvFormat().split(";")[6];
+      previousServerFromScore = gameScore.startsWith("*") ? player1 : gameScore.endsWith("*") ? player2 : null;
+    }
+    if (scoreboard.getPreviousScoreAdvFormat() == null && scoreboard.getCurrentScoreAdvFormat() != null) {
+      String gameScore = scoreboard.getCurrentScoreAdvFormat().split(";")[6];
+      previousServerFromScore = gameScore.startsWith("*") ? player1 : gameScore.endsWith("*") ? player2 : null;
+    }
+    return previousServerFromScore;
+  }
+
+  public Player getCurrentServerFromScore() {
+    currentServer = scoreboard.getCurrentServer();
+    return currentServer;
   }
 
   public enum EScoreParts {
@@ -138,66 +167,6 @@ public class Match
     GAME_SCORE
   }
 
-  private Player findPointWinner() {
-    TotalScoreHolder currentScoreHolder = new TotalScoreHolder(currentScoreAdvFormat);
-    TotalScoreHolder previousScoreHolder = new TotalScoreHolder(previousScoreAdvFormat);
-    return currentScoreHolder.previousPointWonBy(previousScoreHolder);
-  }
-
-
-  private class TotalScoreHolder {
-    private final Long sc1;
-    private final Long sc2;
-
-    private TotalScoreHolder(final String scoreAdvFormat) {
-      String[] parts = scoreAdvFormat.replaceAll("\\*", "").split(";");
-      ArrayList<String> p1Parts = new ArrayList<>();
-      ArrayList<String> p2Parts = new ArrayList<>();
-      for (String part : parts) {
-        String[] split = part.split(":");
-        p1Parts.add(split[0]);
-        p2Parts.add(split[1]);
-      }
-
-      sc1 = calculateScore(p1Parts);
-      sc2 = calculateScore(p2Parts);
-    }
-
-    public Player previousPointWonBy(TotalScoreHolder previousScoreHolder) {
-      if (sc1 - previousScoreHolder.getSc1() < 0 && sc2 - previousScoreHolder.getSc2() >= 0) {
-        return player2;
-      }
-
-      if (sc1 - previousScoreHolder.getSc1() >= 0 && sc2 - previousScoreHolder.getSc2() < 0) {
-        return player1;
-      }
-      return null;
-    }
-
-    public Long getSc1() {
-      return sc1;
-    }
-
-    public Long getSc2() {
-      return sc2;
-    }
-  }
-
-  private Long calculateScore(ArrayList<String> pParts) {
-    int[] multipliers = {10 * 13, 10 * 11, 10 * 9, 10 * 7, 10 * 5, 10 * 3, 1};
-    long score = 0L;
-    int cnt = 0;
-    for (final String pPart : pParts) {
-      String _pPart = pPart;
-      if (pPart.equals("ADV")) {
-        _pPart = "50";
-      }
-      Long _score = Long.parseLong(_pPart) * multipliers[cnt];
-      score += _score;
-      cnt++;
-    }
-    return score;
-  }
 
   public void setCurrentPointWinner(Player player) {
     Point currentPoint = getCurrentPoint();
@@ -230,7 +199,7 @@ public class Match
 
   private void createNextSet(int scorePlayer1, int scorePlayer11) {
     int id = this.children.size() + 1;
-    Set set = new Set(Long.valueOf(id), this);
+    Set set = new Set((long) id, this);
     if (id % 2 == 1) {
       set.init(this.toServeFirst, this.toReceiveFirst);
     } else {
@@ -274,7 +243,7 @@ public class Match
   }
 
   public String getNotStrictScore() {
-    List<String> strictScore = Arrays.asList(new String[]{"0:0", "0:0", "0:0", "0:0", "0:0", "0:0", "0:0"});
+    List<String> strictScore = Arrays.asList("0:0", "0:0", "0:0", "0:0", "0:0", "0:0", "0:0");
 
 
     strictScore.set(0, getPlayer1Score() + ":" + getPlayer2Score());
@@ -289,10 +258,14 @@ public class Match
     if (currentPoint != null) {
       String player1Score = currentPoint.getPlayer1ScoreAdvFormat();
       String player2Score = currentPoint.getPlayer2ScoreAdvFormat();
-      strictScore.set(6,
-          (currentPoint.getCurrentServer().equals(player1) ? "*" : "")
-              + player1Score + ":" + player2Score
-              + (currentPoint.getCurrentServer().equals(player2) ? "*" : ""));
+      if (currentPoint.getCurrentServer() == null) {
+        strictScore.set(6, "0:0");
+      } else {
+        strictScore.set(6,
+            (currentPoint.getCurrentServer().equals(player1) ? "*" : "")
+                + player1Score + ":" + player2Score
+                + (currentPoint.getCurrentServer().equals(player2) ? "*" : ""));
+      }
     } else {
       strictScore.set(6, "0:0");
     }
@@ -300,7 +273,7 @@ public class Match
   }
 
   public String getStrictScore() {
-    List<String> strictScore = Arrays.asList(new String[]{"0:0", "0:0", "0:0", "0:0", "0:0", "0:0", "0:0"});
+    List<String> strictScore = Arrays.asList("0:0", "0:0", "0:0", "0:0", "0:0", "0:0", "0:0");
     strictScore.set(0, getPlayer1Score() + ":" + getPlayer2Score());
 
     int cnt = 1;
