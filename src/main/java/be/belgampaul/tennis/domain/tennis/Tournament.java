@@ -53,6 +53,11 @@ public class Tournament extends AbstractTennisObject<Tournament> implements ITen
   }
 
   @Override
+  public Boolean isMatchCompleted() {
+    throw new UnsupportedOperationException();
+  }
+
+  @Override
   public Boolean isCompleted() {
     return null;
   }

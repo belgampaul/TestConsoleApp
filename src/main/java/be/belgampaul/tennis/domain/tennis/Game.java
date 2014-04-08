@@ -29,7 +29,7 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
     if (children.size() > 0) {
       log.debug("");
       log.debug("a point has been won by " + children.getLast().getWinner().getLastName());
-      log.debug("calcScore: " + getParent().getParent().getNotStrictScore() + " 1xbetScore: ");
+      log.debug("calcScore: " + getParent().getParent().getNotStrictScore() + " 1xbetScore: " + getParent().getParent().getScoreboard().getCurrentScoreAdvFormat());
       log.debug("");
     }
     if (getWinner() != null) {
@@ -48,7 +48,7 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
       log.debug("creating next point");
       createNextPoint(scoreAfterPointPlayer1, scoreAfterPointPlayer2, totalPointsPlayed);
     }
-    log.debug(" calculated score: " + getParent().getParent().getNotStrictScore() + " \nactual 1xbet score: " + getParent().getParent().getScoreboard().getCurrentScoreAdvFormat());
+    log.debug("calculated score: " + getParent().getParent().getNotStrictScore() + " \nactual 1xbet score: " + getParent().getParent().getScoreboard().getCurrentScoreAdvFormat());
   }
 
   private void createNextPoint(Integer scoreAfterPointPlayer1, Integer scoreAfterPointPlayer2, int totalPointsPlayed) {
@@ -71,8 +71,8 @@ public class Game extends AbstractTennisMatchObject<Set, Point> {
       _scoreAfterPointPlayer1 = Integer.parseInt(scoreAfterPointPlayer1);
       _scoreAfterPointPlayer2 = Integer.parseInt(scoreAfterPointPlayer2);
     } else {
-      _scoreAfterPointPlayer1 = Integer.parseInt(ScoreUtils.convertAdvFormatToNumber(scoreAfterPointPlayer1));
-      _scoreAfterPointPlayer2 = Integer.parseInt(ScoreUtils.convertAdvFormatToNumber(scoreAfterPointPlayer2));
+      _scoreAfterPointPlayer1 = Integer.parseInt(ScoreboardUtils.convertAdvFormatToNumber(scoreAfterPointPlayer1));
+      _scoreAfterPointPlayer2 = Integer.parseInt(ScoreboardUtils.convertAdvFormatToNumber(scoreAfterPointPlayer2));
     }
 
     int totalPointsPlayed = _scoreAfterPointPlayer1 + _scoreAfterPointPlayer2;

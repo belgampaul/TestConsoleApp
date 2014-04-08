@@ -24,18 +24,17 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
     this.player1 = player1;
     this.player2 = player2;
     this.gameType = ETennisGameType.STANDARD;
+    scoreboard = new Scoreboard(this);
   }
 
   public Match(Value v) {
-    super(v.getId().longValue(), null);
-    this.player1 = new Player(v.getOpp1(), "");
-    this.player2 = new Player(v.getOpp2(), "");
+    this(v.getId().longValue(), null, new Player(v.getOpp1(), ""), new Player(v.getOpp2(), ""));
 
-    scoreboard = new Scoreboard(this);
     scoreboard.setCurrentScoreAdvFormat(v.getStrictScore());
-
     String strictScore = v.getStrictScore();
+
     log.debug(scoreboard.getCurrentScoreBoardWithPlayers());
+
     List<String> scores = Arrays.asList(strictScore.split(";"));
     int ms1 = Integer.parseInt(scores.get(0).split(":")[0]);
     int ms2 = Integer.parseInt(scores.get(0).split(":")[1]);
@@ -43,13 +42,7 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
     int sumMs = ms1 + ms2;
 
 
-    String[] gameScore = scores.get(6).split(":");
-    if (gameScore[0].contains("*")) {
-      currentServer = player1;
-    }
-    if (gameScore[1].contains("*")) {
-      currentServer = player2;
-    }
+    setCurrentServer(scoreboard.getCurrentServer());
 
     for (int setNumber = 0; setNumber < 5; setNumber++) {
       String[] setScore = scores.get(setNumber + 1).split(":");
@@ -82,8 +75,8 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
       children.add(set);
 
       nextGame.createNextPoint(
-          ScoreUtils.convertAdvFormatToNumber(gameScore[0]).replaceAll("\\*", ""),
-          ScoreUtils.convertAdvFormatToNumber(gameScore[1]).replaceAll("\\*", ""),
+          ScoreboardUtils.convertAdvFormatToNumber(scoreboard.getGameScorePlayer1()),
+          ScoreboardUtils.convertAdvFormatToNumber(scoreboard.getGameScorePlayer2()),
           currentServer,
           getCurrentReceiver()
       );
@@ -93,8 +86,8 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
 
       Game game = new Game(children.getLast().getChildren().size() + 1L, children.getLast());
       game.createNextPoint(
-          ScoreUtils.convertAdvFormatToNumber(gameScore[0]).replaceAll("\\*", ""),
-          ScoreUtils.convertAdvFormatToNumber(gameScore[1]).replaceAll("\\*", ""),
+          ScoreboardUtils.convertAdvFormatToNumber(scoreboard.getGameScorePlayer1()),
+          ScoreboardUtils.convertAdvFormatToNumber(scoreboard.getGameScorePlayer2()),
           currentServer,
           getCurrentReceiver()
       );
@@ -246,9 +239,8 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
   }
 
   public String getNotStrictScore() {
+
     List<String> strictScore = Arrays.asList("0:0", "0:0", "0:0", "0:0", "0:0", "0:0", "0:0");
-
-
     strictScore.set(0, getPlayer1Score() + ":" + getPlayer2Score());
 
 
@@ -257,6 +249,7 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
       strictScore.set(cnt, score.getPlayer1Score() + ":" + score.getPlayer2Score());
       cnt++;
     }
+
     Point currentPoint = getCurrentPoint();
     if (currentPoint != null) {
       String player1Score = currentPoint.getPlayer1ScoreAdvFormat();
@@ -292,4 +285,21 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
     }
     return StringUtils.join(strictScore, ";");
   }
+
+  @Override
+  public void setCurrentServer(Player currentServer) {
+    super.setCurrentServer(currentServer);
+    if (toServeFirst == null) {
+      toServeFirst = currentServer;
+      toReceiveFirst = ScoreboardUtils.getReceiver(toServeFirst, player1, player2);
+    }
+    scoreboard.setCurrentServer(currentServer);
+  }
+
+  @Override
+  public Boolean isMatchCompleted() {
+    return getWinner() != null;
+  }
+
+
 }

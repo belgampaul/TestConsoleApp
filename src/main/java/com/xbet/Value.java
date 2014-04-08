@@ -1,6 +1,6 @@
 package com.xbet;
 
-import be.belgampaul.tennis.domain.tennis.ScoreUtils;
+import be.belgampaul.tennis.domain.tennis.ScoreboardUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.annotate.JsonIgnore;
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
@@ -318,9 +318,9 @@ public class Value {
     String sc11 = this.scores.getSubScore().getSc1();
     String sc22 = this.scores.getSubScore().getSc2();
 
-    String sc111 = ScoreUtils.convertAdvFormatToNumber(sc11);
+    String sc111 = ScoreboardUtils.convertAdvFormatToNumber(sc11);
 
-    String sc222 = ScoreUtils.convertAdvFormatToNumber(sc22);
+    String sc222 = ScoreboardUtils.convertAdvFormatToNumber(sc22);
 
     strictScore.set(6, s1+sc11 + ":" + sc22+s2);
     return StringUtils.join(strictScore, ";");

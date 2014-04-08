@@ -3,6 +3,7 @@ package be.belgampaul.tennis.domain.tennis;
 import be.belgampaul.tennis.constants.TennisConstants;
 import be.belgampaul.tennis.domain.ETennisGameType;
 import be.belgampaul.tennis.domain.Player;
+import org.apache.log4j.Logger;
 
 /**
  * User: ikka
@@ -10,6 +11,8 @@ import be.belgampaul.tennis.domain.Player;
  * Time: 3:44 AM
  */
 public class Set extends AbstractTennisMatchObject<Match, Game> {
+  //logger
+  private static final Logger log = Logger.getLogger(Set.class);
 
   public Set(Long id, Match match) {
     super(id, match);
@@ -18,7 +21,7 @@ public class Set extends AbstractTennisMatchObject<Match, Game> {
 
   @Override
   protected void calculateResult() {
-    System.err.println("a game has been won by " + children.getLast().getWinner().getLastName());
+    log.debug("Game " + children.getLast().getId() + " + is won by " + children.getLast().getWinner().getLastName());
     if (getWinner() != null) {
       return;
     }

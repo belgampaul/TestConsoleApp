@@ -16,4 +16,5 @@ public interface ITennisMatch extends ICompletable {
   Player getCurrentServer();
   Point getCurrentPoint();
   Player getWinner();
+  Boolean isMatchCompleted();
 }

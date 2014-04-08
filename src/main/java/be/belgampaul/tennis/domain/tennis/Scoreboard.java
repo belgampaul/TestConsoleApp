@@ -16,6 +16,9 @@ import java.util.LinkedList;
 public class Scoreboard implements IChild<Match> {
   //logger
   private static final Logger log = Logger.getLogger(Scoreboard.class);
+  public static final String SCORE_BEFORE_TOSS = "0:0;0:0;0:0;0:0;0:0;0:0;0:0";
+  public static final String SCORE_BEFORE_AFTER_TOSS_P2_TO_SERVE = "0:0;0:0;0:0;0:0;0:0;0:0;0:0*";
+  public static final String SCORE_BEFORE_AFTER_TOSS_P1_TO_SERVE = "0:0;0:0;0:0;0:0;0:0;0:0;*0:0";
 
   private Player previousServerFromScore;
   private Player currentServer;
@@ -23,26 +26,26 @@ public class Scoreboard implements IChild<Match> {
   public final Player player2;
 
   private String previousScoreAdvFormat;
-  private String currentScoreAdvFormat;
+  private String currentScoreAdvFormat = SCORE_BEFORE_TOSS;
   private Match parent;
 
-  private String matchScorePlayer1;
-  private String matchScorePlayer2;
+  private String matchScorePlayer1 = "0";
+  private String matchScorePlayer2 = "0";
 
-  private String set1ScorePlayer1;
-  private String set2ScorePlayer1;
-  private String set3ScorePlayer1;
-  private String set4ScorePlayer1;
-  private String set5ScorePlayer1;
+  private String set1ScorePlayer1 = "0";
+  private String set2ScorePlayer1 = "0";
+  private String set3ScorePlayer1 = "0";
+  private String set4ScorePlayer1 = "0";
+  private String set5ScorePlayer1 = "0";
 
-  private String set1ScorePlayer2;
-  private String set2ScorePlayer2;
-  private String set3ScorePlayer2;
-  private String set4ScorePlayer2;
-  private String set5ScorePlayer2;
+  private String set1ScorePlayer2 = "0";
+  private String set2ScorePlayer2 = "0";
+  private String set3ScorePlayer2 = "0";
+  private String set4ScorePlayer2 = "0";
+  private String set5ScorePlayer2 = "0";
 
-  private String gameScorePlayer1;
-  private String gameScorePlayer2;
+  private String gameScorePlayer1 = "0";
+  private String gameScorePlayer2 = "0";
 
   private LinkedList<String> scoreLog = new LinkedList<>();
 
@@ -59,6 +62,10 @@ public class Scoreboard implements IChild<Match> {
    * @return true signals that the score is changed, false indicates that the score is not changed
    */
   public boolean setCurrentScoreAdvFormat(String currentScoreAdvFormat) {
+    if (parent.isMatchCompleted()) {
+      return false;
+    }
+
     if (isValidScoreFormat(currentScoreAdvFormat)
         && !currentScoreAdvFormat.equals(this.currentScoreAdvFormat)) {
       previousScoreAdvFormat = this.currentScoreAdvFormat;
@@ -162,7 +169,10 @@ public class Scoreboard implements IChild<Match> {
   }
 
   public void setCurrentServer(Player currentServer) {
-    this.currentServer = currentServer;
+    if (currentServer  != null){
+      this.currentServer = currentServer;
+    }
+    setCurrentScoreAdvFormat(getCurrentScoreBoard());
   }
 
   public Player getPlayer2() {
@@ -208,8 +218,8 @@ public class Scoreboard implements IChild<Match> {
         p2Parts.add(split[1]);
       }
 
-      sc1 = ScoreUtils.calculateScore(p1Parts);
-      sc2 = ScoreUtils.calculateScore(p2Parts);
+      sc1 = ScoreboardUtils.calculateScore(p1Parts);
+      sc2 = ScoreboardUtils.calculateScore(p2Parts);
     }
 
     public Player previousPointWonBy(TotalScoreHolder previousScoreHolder) {
@@ -236,4 +246,63 @@ public class Scoreboard implements IChild<Match> {
 
   }
 
+  public String getMatchScorePlayer1() {
+    return matchScorePlayer1;
+  }
+
+  public String getMatchScorePlayer2() {
+    return matchScorePlayer2;
+  }
+
+  public String getSet1ScorePlayer1() {
+    return set1ScorePlayer1;
+  }
+
+  public String getSet2ScorePlayer1() {
+    return set2ScorePlayer1;
+  }
+
+  public String getSet3ScorePlayer1() {
+    return set3ScorePlayer1;
+  }
+
+  public String getSet4ScorePlayer1() {
+    return set4ScorePlayer1;
+  }
+
+  public String getSet5ScorePlayer1() {
+    return set5ScorePlayer1;
+  }
+
+  public String getSet1ScorePlayer2() {
+    return set1ScorePlayer2;
+  }
+
+  public String getSet2ScorePlayer2() {
+    return set2ScorePlayer2;
+  }
+
+  public String getSet3ScorePlayer2() {
+    return set3ScorePlayer2;
+  }
+
+  public String getSet4ScorePlayer2() {
+    return set4ScorePlayer2;
+  }
+
+  public String getSet5ScorePlayer2() {
+    return set5ScorePlayer2;
+  }
+
+  public String getGameScorePlayer1() {
+    return gameScorePlayer1;
+  }
+
+  public String getGameScorePlayer2() {
+    return gameScorePlayer2;
+  }
+
+  public LinkedList<String> getScoreLog() {
+    return scoreLog;
+  }
 }

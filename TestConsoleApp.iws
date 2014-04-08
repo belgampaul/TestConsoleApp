@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a5f1cdb-dd73-4894-bf9f-70c149551896" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/be/belgampaul/json/feeds/HttpAddresses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/be/belgampaul/json/feeds/JsonFeedsTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/network/NetworkUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisObject.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisObject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ITennisMatch.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ITennisMatch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Match.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Match.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java" afterPath="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/tennis/MatchTest.java" afterPath="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/tennis/MatchTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestConsoleApp.iws" afterPath="$PROJECT_DIR$/TestConsoleApp.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MOVED" beforePath="D:\git\TestConsoleApp\src\main\java\Game.java" afterPath="$PROJECT_DIR$/src/main/java/com/nhl/json/live/Game.java" />
-      <change type="MOVED" beforePath="D:\git\TestConsoleApp\src\main\java\Scoreboard.java" afterPath="$PROJECT_DIR$/src/main/java/com/nhl/json/live/Scoreboard.java" />
-      <change type="MOVED" beforePath="D:\git\TestConsoleApp\src\main\java\com\xbet\d.js" afterPath="$PROJECT_DIR$/src/main/java/com/xbet/generated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Tournament.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Tournament.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xbet/Value.java" afterPath="$PROJECT_DIR$/src/main/java/com/xbet/Value.java" />
+      <change type="MOVED" beforePath="D:\git\TestConsoleApp\src\main\java\be\belgampaul\tennis\domain\tennis\ScoreUtils.java" afterPath="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreboardUtils.java" />
     </list>
     <ignored path="TestConsoleApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,22 +70,7 @@
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" line="20" class="be.belgampaul.tennis.domain.tennis.Set" package="be.belgampaul.tennis.domain.tennis">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" line="55" class="be.belgampaul.tennis.domain.tennis.Set" package="be.belgampaul.tennis.domain.tennis">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java" line="154" class="be.belgampaul.tennis.domain.tennis.Point" package="be.belgampaul.tennis.domain.tennis">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -114,181 +98,7 @@
       <file leaf-file-name="Set.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="25" selection-start="1198" selection-end="2416" vertical-scroll-proportion="-3.4" vertical-offset="510" max-vertical-offset="1445">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Matches.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Matches.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="48" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Match.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="5" selection-start="3337" selection-end="3337" vertical-scroll-proportion="-7.84" vertical-offset="1538" max-vertical-offset="5100">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5298#5299#0" expanded="true" />
-                <element signature="e#5325#5326#0" expanded="true" />
-                <element signature="e#6996#6997#0" expanded="true" />
-                <element signature="e#7025#7026#0" expanded="true" />
-                <element signature="e#7069#7070#0" expanded="true" />
-                <element signature="e#7101#7102#0" expanded="true" />
-                <element signature="e#7133#7134#0" expanded="true" />
-                <element signature="e#7162#7163#0" expanded="true" />
-                <element signature="e#7200#7201#0" expanded="true" />
-                <element signature="e#7235#7236#0" expanded="true" />
-                <element signature="e#7561#7562#0" expanded="true" />
-                <element signature="e#7593#7594#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scoreboard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="16" selection-start="4338" selection-end="4338" vertical-scroll-proportion="0.0" vertical-offset="2407" max-vertical-offset="4165">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3916#3917#0" expanded="true" />
-                <element signature="e#3955#3956#0" expanded="true" />
-                <element signature="e#4029#4030#0" expanded="true" />
-                <element signature="e#4091#4092#0" expanded="true" />
-                <element signature="e#4139#4140#0" expanded="true" />
-                <element signature="e#4179#4180#0" expanded="true" />
-                <element signature="e#4255#4256#0" expanded="true" />
-                <element signature="e#4319#4320#0" expanded="true" />
-                <element signature="e#4365#4366#0" expanded="true" />
-                <element signature="e#4403#4404#0" expanded="true" />
-                <element signature="e#4445#4446#0" expanded="true" />
-                <element signature="e#4468#4469#0" expanded="true" />
-                <element signature="e#4500#4501#0" expanded="true" />
-                <element signature="e#4524#4525#0" expanded="true" />
-                <element signature="e#4563#4564#0" expanded="true" />
-                <element signature="e#4593#4594#0" expanded="true" />
-                <element signature="e#4649#4650#0" expanded="true" />
-                <element signature="e#4693#4694#0" expanded="true" />
-                <element signature="e#4725#4726#0" expanded="true" />
-                <element signature="e#4749#4750#0" expanded="true" />
-                <element signature="e#6922#6923#0" expanded="true" />
-                <element signature="e#6946#6947#0" expanded="true" />
-                <element signature="e#6974#6975#0" expanded="true" />
-                <element signature="e#6998#6999#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Player.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IChild.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/IChild.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="112" selection-end="112" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Integer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/Integer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="613" column="22" selection-start="23004" selection-end="23012" vertical-scroll-proportion="0.0" vertical-offset="9941" max-vertical-offset="26826">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ScoreUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="17" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="343" max-vertical-offset="612">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Math.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0/src.zip!/java/lang/Math.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="642" column="25" selection-start="26160" selection-end="26160" vertical-scroll-proportion="0.0" vertical-offset="10363" max-vertical-offset="39950">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="35" selection-start="611" selection-end="611" vertical-scroll-proportion="-2.28" vertical-offset="368" max-vertical-offset="2057">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractTennisMatchObject.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-2.08" vertical-offset="662" max-vertical-offset="2363">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2091#2092#0" expanded="true" />
-                <element signature="e#2135#2136#0" expanded="true" />
-                <element signature="e#2713#2943#0" expanded="true" />
-                <element signature="e#2938#2939#0" expanded="true" />
-                <element signature="e#3447#3448#0" expanded="true" />
-                <element signature="e#3472#3473#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Java/jdk1.8.0/src.zip!/java/util/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="253" column="13" selection-start="6986" selection-end="6986" vertical-scroll-proportion="0.0" vertical-offset="3834" max-vertical-offset="21165">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ITennisMatch.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ITennisMatch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="408">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICompletable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/ICompletable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="17" selection-start="144" selection-end="144" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Set.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Set.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="2" selection-start="949" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="514" max-vertical-offset="1190">
+            <state line="30" column="80" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1479">
               <folding />
             </state>
           </provider>
@@ -297,13 +107,50 @@
       <file leaf-file-name="AbstractTennisObject.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="0" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0" vertical-offset="619" max-vertical-offset="1173">
+            <state line="41" column="0" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="1105">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MatchTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/tennis/MatchTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="24" selection-start="1886" selection-end="1886" vertical-scroll-proportion="-3.96" vertical-offset="1281" max-vertical-offset="1802">
               <folding>
-                <element signature="e#674#675#0" expanded="true" />
-                <element signature="e#697#698#0" expanded="true" />
-                <element signature="e#1870#1871#0" expanded="true" />
-                <element signature="e#1893#1894#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractTennisMatchObject.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="83" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="2431">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2091#2092#0" expanded="true" />
+                <element signature="e#2135#2136#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tournament.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Tournament.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="46" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ITennisMatch.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ITennisMatch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="21" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="425">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -311,220 +158,40 @@
       <file leaf-file-name="Point.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="0" selection-start="3527" selection-end="3527" vertical-scroll-proportion="-3.4" vertical-offset="1819" max-vertical-offset="2873">
+            <state line="161" column="49" selection-start="4836" selection-end="4836" vertical-scroll-proportion="0.0" vertical-offset="2151" max-vertical-offset="2567">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1776#1777#0" expanded="true" />
-                <element signature="e#1806#1807#0" expanded="true" />
-                <element signature="e#2098#2099#0" expanded="true" />
-                <element signature="e#2143#2144#0" expanded="true" />
-                <element signature="e#2220#2221#0" expanded="true" />
-                <element signature="e#2284#2285#0" expanded="true" />
-                <element signature="e#2333#2334#0" expanded="true" />
-                <element signature="e#2378#2379#0" expanded="true" />
-                <element signature="e#2455#2456#0" expanded="true" />
-                <element signature="e#2519#2520#0" expanded="true" />
-                <element signature="e#2567#2568#0" expanded="true" />
-                <element signature="e#2611#2612#0" expanded="true" />
-                <element signature="e#2686#2687#0" expanded="true" />
-                <element signature="e#2748#2749#0" expanded="true" />
-                <element signature="e#2796#2797#0" expanded="true" />
-                <element signature="e#2840#2841#0" expanded="true" />
-                <element signature="e#2915#2916#0" expanded="true" />
-                <element signature="e#2977#2978#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidationException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/exceptions/ValidationException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="41" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="11" selection-start="2659" selection-end="2659" vertical-scroll-proportion="0.0" vertical-offset="1050" max-vertical-offset="1479">
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhl/json/live/Game.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2550">
+            <state line="105" column="14" selection-start="4159" selection-end="4159" vertical-scroll-proportion="0.0" vertical-offset="1659" max-vertical-offset="2057">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generated.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xbet/generated.js">
+      <file leaf-file-name="Match.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="226" column="5" selection-start="571" selection-end="8807" vertical-scroll-proportion="0.5652174" vertical-offset="3621" max-vertical-offset="84745">
+            <state line="299" column="17" selection-start="9435" selection-end="9435" vertical-scroll-proportion="-6.4" vertical-offset="4753" max-vertical-offset="5100">
               <folding>
-                <marker date="1396917322981" expanded="false" signature="6581:6623" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="6636:6647" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="6764:6811" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="6854:6988" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="7014:7026" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="10917:10934" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="15406:15417" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="16068:16079" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="17337:17348" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="17881:17892" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="18834:18845" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="19748:19759" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="20291:20302" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="21248:21307" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="21417:21554" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="25847:25897" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="30583:30595" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="30622:30633" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="31126:31147" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="31208:31241" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="31385:31495" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="31509:31520" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="31926:31975" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="35004:35103" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="40756:40810" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="40822:40848" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="50609:50620" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="50731:50748" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="50885:50897" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="51055:51066" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="51177:51194" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="51346:51358" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="51497:51516" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="53091:53106" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="53498:53513" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="53852:53867" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="54222:54237" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="54560:54575" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="54898:54913" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="55366:55381" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="55806:55821" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="56520:56535" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="56875:56890" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="58101:58116" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="58408:58423" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="59171:59186" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="59620:59635" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="62178:62199" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="62254:62287" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="63018:63159" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="63742:63754" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="63781:63792" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="63975:63986" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="64164:64176" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="64203:64214" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="64397:64408" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="64545:64557" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="64584:64595" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="64778:64789" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="64907:65049" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="65389:65404" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="65426:65470" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="65483:65494" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="65687:65695" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="65762:65773" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="65999:66014" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66036:66080" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66093:66104" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66297:66310" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66367:66378" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66604:66619" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66641:66685" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66698:66709" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66902:66915" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="66972:66983" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="76860:76910" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="77665:77683" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="77698:77756" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="78107:78140" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="81042:81091" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="81997:82049" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="82105:82156" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="86425:86443" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="88528:88539" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="88780:88791" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="92096:92106" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="92195:92205" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="92295:92305" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="92392:92402" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="93055:93102" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="93136:93184" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="93485:93532" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="93569:93617" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="93932:93979" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="94017:94065" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="94371:94418" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="94455:94503" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="94832:94879" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="94919:94967" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="99554:99590" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="101060:101075" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="101947:101983" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="103561:103576" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="105382:105397" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="107186:107201" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="113944:113994" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="116309:116337" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="178267:178510" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="178719:178750" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="180279:180310" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="181757:181788" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="182241:182272" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="186333:186364" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="187871:187902" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="189572:189603" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="190005:190036" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="199506:199540" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="199622:199714" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="202886:202898" placeholder="..." />
-                <marker date="1396917322981" expanded="false" signature="203022:203036" placeholder="..." />
+                <element signature="imports" expanded="true" />
+                <element signature="e#5124#5125#0" expanded="true" />
+                <element signature="e#5151#5152#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scoreboard.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/nhl/json/live/Scoreboard.java">
+      <file leaf-file-name="ScoreboardUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreboardUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="2" selection-start="193" selection-end="569" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="595">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JsonFeedsTests.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/be/belgampaul/json/feeds/JsonFeedsTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="30" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpAddresses.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/be/belgampaul/json/feeds/HttpAddresses.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="92" selection-start="176" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NetworkUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/network/NetworkUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="41" selection-start="346" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="527">
+            <state line="38" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="833">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -532,142 +199,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <file leaf-file-name="Scoreboard.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="38" selection-start="389" selection-end="389" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MatchTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="216" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1105">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Value.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/xbet/Value.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="321" column="0" selection-start="6606" selection-end="6606" vertical-scroll-proportion="0.0" vertical-offset="5338" max-vertical-offset="6324">
+            <state line="67" column="4" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.6951673" vertical-offset="952" max-vertical-offset="5338">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1136#1137#0" expanded="true" />
-                <element signature="e#1166#1167#0" expanded="true" />
-                <element signature="e#1240#1241#0" expanded="true" />
-                <element signature="e#1274#1275#0" expanded="true" />
-                <element signature="e#1308#1309#0" expanded="true" />
-                <element signature="e#1339#1340#0" expanded="true" />
-                <element signature="e#1416#1417#0" expanded="true" />
-                <element signature="e#1452#1453#0" expanded="true" />
-                <element signature="e#1483#1484#0" expanded="true" />
-                <element signature="e#1511#1512#0" expanded="true" />
-                <element signature="e#1579#1580#0" expanded="true" />
-                <element signature="e#1609#1610#0" expanded="true" />
-                <element signature="e#1639#1640#0" expanded="true" />
-                <element signature="e#1666#1667#0" expanded="true" />
-                <element signature="e#1731#1732#0" expanded="true" />
-                <element signature="e#1759#1760#0" expanded="true" />
-                <element signature="e#1788#1789#0" expanded="true" />
-                <element signature="e#1814#1815#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1902#1903#0" expanded="true" />
-                <element signature="e#1939#1940#0" expanded="true" />
-                <element signature="e#1967#1968#0" expanded="true" />
-                <element signature="e#2041#2042#0" expanded="true" />
-                <element signature="e#2071#2072#0" expanded="true" />
-                <element signature="e#2105#2106#0" expanded="true" />
-                <element signature="e#2135#2136#0" expanded="true" />
-                <element signature="e#2210#2211#0" expanded="true" />
-                <element signature="e#2244#2245#0" expanded="true" />
-                <element signature="e#2277#2278#0" expanded="true" />
-                <element signature="e#2307#2308#0" expanded="true" />
-                <element signature="e#2381#2382#0" expanded="true" />
-                <element signature="e#2415#2416#0" expanded="true" />
-                <element signature="e#2447#2448#0" expanded="true" />
-                <element signature="e#2476#2477#0" expanded="true" />
-                <element signature="e#2547#2548#0" expanded="true" />
-                <element signature="e#2579#2580#0" expanded="true" />
-                <element signature="e#2606#2607#0" expanded="true" />
-                <element signature="e#2630#2631#0" expanded="true" />
-                <element signature="e#2686#2687#0" expanded="true" />
-                <element signature="e#2708#2709#0" expanded="true" />
-                <element signature="e#2740#2741#0" expanded="true" />
-                <element signature="e#2769#2770#0" expanded="true" />
-                <element signature="e#2840#2841#0" expanded="true" />
-                <element signature="e#2872#2873#0" expanded="true" />
-                <element signature="e#2903#2904#0" expanded="true" />
-                <element signature="e#2931#2932#0" expanded="true" />
-                <element signature="e#2999#3000#0" expanded="true" />
-                <element signature="e#3029#3030#0" expanded="true" />
-                <element signature="e#3064#3065#0" expanded="true" />
-                <element signature="e#3096#3097#0" expanded="true" />
-                <element signature="e#3176#3177#0" expanded="true" />
-                <element signature="e#3214#3215#0" expanded="true" />
-                <element signature="e#3247#3248#0" expanded="true" />
-                <element signature="e#3277#3278#0" expanded="true" />
-                <element signature="e#3351#3352#0" expanded="true" />
-                <element signature="e#3385#3386#0" expanded="true" />
-                <element signature="e#3413#3414#0" expanded="true" />
-                <element signature="e#3438#3439#0" expanded="true" />
-                <element signature="e#3497#3498#0" expanded="true" />
-                <element signature="e#3521#3522#0" expanded="true" />
-                <element signature="e#3550#3551#0" expanded="true" />
-                <element signature="e#3576#3577#0" expanded="true" />
-                <element signature="e#3638#3639#0" expanded="true" />
-                <element signature="e#3664#3665#0" expanded="true" />
-                <element signature="e#3693#3694#0" expanded="true" />
-                <element signature="e#3719#3720#0" expanded="true" />
-                <element signature="e#3781#3782#0" expanded="true" />
-                <element signature="e#3807#3808#0" expanded="true" />
-                <element signature="e#3838#3839#0" expanded="true" />
-                <element signature="e#3866#3867#0" expanded="true" />
-                <element signature="e#3934#3935#0" expanded="true" />
-                <element signature="e#3964#3965#0" expanded="true" />
-                <element signature="e#3999#4000#0" expanded="true" />
-                <element signature="e#4031#4032#0" expanded="true" />
-                <element signature="e#4111#4112#0" expanded="true" />
-                <element signature="e#4149#4150#0" expanded="true" />
-                <element signature="e#4178#4179#0" expanded="true" />
-                <element signature="e#4204#4205#0" expanded="true" />
-                <element signature="e#4266#4267#0" expanded="true" />
-                <element signature="e#4292#4293#0" expanded="true" />
-                <element signature="e#4323#4324#0" expanded="true" />
-                <element signature="e#4351#4352#0" expanded="true" />
-                <element signature="e#4419#4420#0" expanded="true" />
-                <element signature="e#4449#4450#0" expanded="true" />
-                <element signature="e#4481#4482#0" expanded="true" />
-                <element signature="e#4510#4511#0" expanded="true" />
-                <element signature="e#4581#4582#0" expanded="true" />
-                <element signature="e#4613#4614#0" expanded="true" />
-                <element signature="e#4647#4648#0" expanded="true" />
-                <element signature="e#4678#4679#0" expanded="true" />
-                <element signature="e#4755#4756#0" expanded="true" />
-                <element signature="e#4791#4792#0" expanded="true" />
-                <element signature="e#4821#4822#0" expanded="true" />
-                <element signature="e#4848#4849#0" expanded="true" />
-                <element signature="e#4913#4914#0" expanded="true" />
-                <element signature="e#4941#4942#0" expanded="true" />
-                <element signature="e#4975#4976#0" expanded="true" />
-                <element signature="e#5006#5007#0" expanded="true" />
-                <element signature="e#5083#5084#0" expanded="true" />
-                <element signature="e#5119#5120#0" expanded="true" />
-                <element signature="e#5147#5148#0" expanded="true" />
-                <element signature="e#5171#5172#0" expanded="true" />
-                <element signature="e#5228#5229#0" expanded="true" />
-                <element signature="e#5250#5251#0" expanded="true" />
-                <element signature="e#5277#5278#0" expanded="true" />
-                <element signature="e#5301#5302#0" expanded="true" />
-                <element signature="e#5357#5358#0" expanded="true" />
-                <element signature="e#5379#5380#0" expanded="true" />
-                <element signature="e#5412#5413#0" expanded="true" />
-                <element signature="e#5442#5443#0" expanded="true" />
-                <element signature="e#5516#5517#0" expanded="true" />
-                <element signature="e#5550#5551#0" expanded="true" />
+                <element signature="e#4362#4363#0" expanded="true" />
+                <element signature="e#4401#4402#0" expanded="true" />
+                <element signature="e#4475#4476#0" expanded="true" />
+                <element signature="e#4537#4538#0" expanded="true" />
+                <element signature="e#4585#4586#0" expanded="true" />
+                <element signature="e#4625#4626#0" expanded="true" />
+                <element signature="e#4701#4702#0" expanded="true" />
+                <element signature="e#4765#4766#0" expanded="true" />
+                <element signature="e#4811#4812#0" expanded="true" />
+                <element signature="e#4849#4850#0" expanded="true" />
+                <element signature="e#4891#4892#0" expanded="true" />
+                <element signature="e#4914#4915#0" expanded="true" />
+                <element signature="e#4946#4947#0" expanded="true" />
+                <element signature="e#4970#4971#0" expanded="true" />
+                <element signature="e#5009#5010#0" expanded="true" />
+                <element signature="e#5039#5040#0" expanded="true" />
+                <element signature="e#5266#5267#0" expanded="true" />
+                <element signature="e#5290#5291#0" expanded="true" />
+                <element signature="e#7473#7474#0" expanded="true" />
+                <element signature="e#7497#7498#0" expanded="true" />
+                <element signature="e#7525#7526#0" expanded="true" />
+                <element signature="e#7549#7550#0" expanded="true" />
+                <element signature="e#7596#7597#0" expanded="true" />
+                <element signature="e#7630#7631#0" expanded="true" />
+                <element signature="e#7672#7673#0" expanded="true" />
+                <element signature="e#7706#7707#0" expanded="true" />
+                <element signature="e#7747#7748#0" expanded="true" />
+                <element signature="e#7780#7781#0" expanded="true" />
+                <element signature="e#7821#7822#0" expanded="true" />
+                <element signature="e#7854#7855#0" expanded="true" />
+                <element signature="e#7895#7896#0" expanded="true" />
+                <element signature="e#7928#7929#0" expanded="true" />
+                <element signature="e#7969#7970#0" expanded="true" />
+                <element signature="e#8002#8003#0" expanded="true" />
+                <element signature="e#8043#8044#0" expanded="true" />
+                <element signature="e#8076#8077#0" expanded="true" />
+                <element signature="e#8117#8118#0" expanded="true" />
+                <element signature="e#8150#8151#0" expanded="true" />
+                <element signature="e#8191#8192#0" expanded="true" />
+                <element signature="e#8224#8225#0" expanded="true" />
+                <element signature="e#8265#8266#0" expanded="true" />
+                <element signature="e#8298#8299#0" expanded="true" />
+                <element signature="e#8339#8340#0" expanded="true" />
+                <element signature="e#8372#8373#0" expanded="true" />
+                <element signature="e#8413#8414#0" expanded="true" />
+                <element signature="e#8446#8447#0" expanded="true" />
+                <element signature="e#8487#8488#0" expanded="true" />
+                <element signature="e#8520#8521#0" expanded="true" />
+                <element signature="e#8561#8562#0" expanded="true" />
+                <element signature="e#8594#8595#0" expanded="true" />
+                <element signature="e#8639#8640#0" expanded="true" />
+                <element signature="e#8664#8665#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -686,18 +275,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xbet/Value.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Set.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/network/NetworkUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/be/belgampaul/json/feeds/HttpAddresses.java" />
         <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/be/belgampaul/json/feeds/JsonFeedsTests.java" />
@@ -706,6 +288,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/xbet/Scoreboard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nhl/json/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/nhl/json/live/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Match.java" />
+        <option value="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreboardUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ITennisMatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Tournament.java" />
+        <option value="$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/tennis/MatchTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java" />
+        <option value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java" />
       </list>
     </option>
   </component>
@@ -779,6 +373,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestConsoleApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestConsoleApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tennis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -941,6 +577,40 @@
               <option name="myItemId" value="tennis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestConsoleApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestConsoleApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tennis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constants" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -994,11 +664,14 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis" />
   </component>
   <component name="RecentsManager">
+    <key name="IntroduceConstantDialog.RECENTS_KEY">
+      <recent name="be.belgampaul.tennis.domain.tennis.Scoreboard" />
+    </key>
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="be.belgampaul.tennis.domain.tennis.ScoreUtils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.MatchTest (1)">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -1012,6 +685,70 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="TestConsoleApp" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="be.belgampaul.tennis.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestConsoleApp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="be.belgampaul.tennis.domain" />
+      <option name="MAIN_CLASS_NAME" value="be.belgampaul.tennis.domain.MatchTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <configuration default="false" name="MatchTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="be.belgampaul.tennis.domain.tennis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TestConsoleApp" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="be.belgampaul.tennis.domain.tennis" />
+      <option name="MAIN_CLASS_NAME" value="be.belgampaul.tennis.domain.tennis.MatchTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="" />
         <option name="TRANSPORT" value="0" />
@@ -1166,12 +903,16 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MatchTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MatchTest (1)" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MatchTest (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MatchTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
@@ -1195,7 +936,7 @@
       <created>1396821798533</created>
       <updated>1396821798533</updated>
       <workItem from="1396821787590" duration="267000" />
-      <workItem from="1396822155198" duration="40575000" />
+      <workItem from="1396822155198" duration="47436000" />
     </task>
     <task id="LOCAL-00001" summary="intitialCommit2&#10;">
       <created>1396839283386</created>
@@ -1209,11 +950,15 @@
       <created>1396912400239</created>
       <updated>1396912400239</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="continuing. refactorting. nothing notable.&#10;bugs are overall.&#10;">
+      <created>1396917418091</created>
+      <updated>1396917418091</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40842000" />
+    <option name="totallyTimeSpent" value="47703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -1224,11 +969,11 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17420435" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3484087" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25963148" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42211056" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1238,7 +983,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3542296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3542296" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1247,11 +992,11 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48073703" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4120603" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4874372" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37185928" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1261,7 +1006,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32930514" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3542296" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1279,7 +1024,8 @@
     </option>
     <MESSAGE value="intitialCommit2&#10;" />
     <MESSAGE value="continuing. refactorting. nothing notable. &#10;bugs are overall.&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="continuing. refactorting. nothing notable. &#10;bugs are overall.&#10;" />
+    <MESSAGE value="continuing. refactorting. nothing notable.&#10;bugs are overall.&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="continuing. refactorting. nothing notable.&#10;bugs are overall.&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1312,18 +1058,8 @@
         <state line="0" column="5066" selection-start="5066" selection-end="5066" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5325#5326#0" expanded="true" />
-            <element signature="e#6996#6997#0" expanded="true" />
-            <element signature="e#7025#7026#0" expanded="true" />
-            <element signature="e#7069#7070#0" expanded="true" />
-            <element signature="e#7101#7102#0" expanded="true" />
-            <element signature="e#7133#7134#0" expanded="true" />
-            <element signature="e#7162#7163#0" expanded="true" />
-            <element signature="e#7200#7201#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
-            <element signature="e#7561#7562#0" expanded="true" />
-            <element signature="e#7593#7594#0" expanded="true" />
+            <element signature="e#5124#5125#0" expanded="true" />
+            <element signature="e#5151#5152#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1333,32 +1069,7 @@
         <state line="0" column="13" selection-start="13" selection-end="13" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
-            <element signature="e#2143#2144#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2284#2285#0" expanded="true" />
-            <element signature="e#2333#2334#0" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2455#2456#0" expanded="true" />
-            <element signature="e#2519#2520#0" expanded="true" />
-            <element signature="e#2567#2568#0" expanded="true" />
-            <element signature="e#2611#2612#0" expanded="true" />
-            <element signature="e#2686#2687#0" expanded="true" />
-            <element signature="e#2748#2749#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-            <element signature="e#2840#2841#0" expanded="true" />
-            <element signature="e#2915#2916#0" expanded="true" />
-            <element signature="e#2977#2978#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="216" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1105">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1367,118 +1078,118 @@
         <state line="321" column="0" selection-start="6606" selection-end="6606" vertical-scroll-proportion="0.0" vertical-offset="5338" max-vertical-offset="6324">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1166#1167#0" expanded="true" />
-            <element signature="e#1240#1241#0" expanded="true" />
-            <element signature="e#1274#1275#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
-            <element signature="e#1416#1417#0" expanded="true" />
-            <element signature="e#1452#1453#0" expanded="true" />
-            <element signature="e#1483#1484#0" expanded="true" />
-            <element signature="e#1511#1512#0" expanded="true" />
-            <element signature="e#1579#1580#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
-            <element signature="e#1666#1667#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1759#1760#0" expanded="true" />
-            <element signature="e#1788#1789#0" expanded="true" />
-            <element signature="e#1814#1815#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#1939#1940#0" expanded="true" />
-            <element signature="e#1967#1968#0" expanded="true" />
-            <element signature="e#2041#2042#0" expanded="true" />
-            <element signature="e#2071#2072#0" expanded="true" />
-            <element signature="e#2105#2106#0" expanded="true" />
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2210#2211#0" expanded="true" />
-            <element signature="e#2244#2245#0" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="true" />
-            <element signature="e#2307#2308#0" expanded="true" />
-            <element signature="e#2381#2382#0" expanded="true" />
-            <element signature="e#2415#2416#0" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2476#2477#0" expanded="true" />
-            <element signature="e#2547#2548#0" expanded="true" />
-            <element signature="e#2579#2580#0" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2630#2631#0" expanded="true" />
-            <element signature="e#2686#2687#0" expanded="true" />
-            <element signature="e#2708#2709#0" expanded="true" />
-            <element signature="e#2740#2741#0" expanded="true" />
-            <element signature="e#2769#2770#0" expanded="true" />
-            <element signature="e#2840#2841#0" expanded="true" />
-            <element signature="e#2872#2873#0" expanded="true" />
-            <element signature="e#2903#2904#0" expanded="true" />
-            <element signature="e#2931#2932#0" expanded="true" />
-            <element signature="e#2999#3000#0" expanded="true" />
-            <element signature="e#3029#3030#0" expanded="true" />
-            <element signature="e#3064#3065#0" expanded="true" />
-            <element signature="e#3096#3097#0" expanded="true" />
-            <element signature="e#3176#3177#0" expanded="true" />
-            <element signature="e#3214#3215#0" expanded="true" />
-            <element signature="e#3247#3248#0" expanded="true" />
-            <element signature="e#3277#3278#0" expanded="true" />
-            <element signature="e#3351#3352#0" expanded="true" />
-            <element signature="e#3385#3386#0" expanded="true" />
-            <element signature="e#3413#3414#0" expanded="true" />
-            <element signature="e#3438#3439#0" expanded="true" />
-            <element signature="e#3497#3498#0" expanded="true" />
-            <element signature="e#3521#3522#0" expanded="true" />
-            <element signature="e#3550#3551#0" expanded="true" />
-            <element signature="e#3576#3577#0" expanded="true" />
-            <element signature="e#3638#3639#0" expanded="true" />
-            <element signature="e#3664#3665#0" expanded="true" />
-            <element signature="e#3693#3694#0" expanded="true" />
-            <element signature="e#3719#3720#0" expanded="true" />
-            <element signature="e#3781#3782#0" expanded="true" />
-            <element signature="e#3807#3808#0" expanded="true" />
-            <element signature="e#3838#3839#0" expanded="true" />
-            <element signature="e#3866#3867#0" expanded="true" />
-            <element signature="e#3934#3935#0" expanded="true" />
-            <element signature="e#3964#3965#0" expanded="true" />
-            <element signature="e#3999#4000#0" expanded="true" />
-            <element signature="e#4031#4032#0" expanded="true" />
-            <element signature="e#4111#4112#0" expanded="true" />
-            <element signature="e#4149#4150#0" expanded="true" />
-            <element signature="e#4178#4179#0" expanded="true" />
-            <element signature="e#4204#4205#0" expanded="true" />
-            <element signature="e#4266#4267#0" expanded="true" />
-            <element signature="e#4292#4293#0" expanded="true" />
-            <element signature="e#4323#4324#0" expanded="true" />
-            <element signature="e#4351#4352#0" expanded="true" />
-            <element signature="e#4419#4420#0" expanded="true" />
-            <element signature="e#4449#4450#0" expanded="true" />
-            <element signature="e#4481#4482#0" expanded="true" />
-            <element signature="e#4510#4511#0" expanded="true" />
-            <element signature="e#4581#4582#0" expanded="true" />
-            <element signature="e#4613#4614#0" expanded="true" />
-            <element signature="e#4647#4648#0" expanded="true" />
-            <element signature="e#4678#4679#0" expanded="true" />
-            <element signature="e#4755#4756#0" expanded="true" />
-            <element signature="e#4791#4792#0" expanded="true" />
-            <element signature="e#4821#4822#0" expanded="true" />
-            <element signature="e#4848#4849#0" expanded="true" />
-            <element signature="e#4913#4914#0" expanded="true" />
-            <element signature="e#4941#4942#0" expanded="true" />
-            <element signature="e#4975#4976#0" expanded="true" />
-            <element signature="e#5006#5007#0" expanded="true" />
-            <element signature="e#5083#5084#0" expanded="true" />
-            <element signature="e#5119#5120#0" expanded="true" />
-            <element signature="e#5147#5148#0" expanded="true" />
-            <element signature="e#5171#5172#0" expanded="true" />
-            <element signature="e#5228#5229#0" expanded="true" />
-            <element signature="e#5250#5251#0" expanded="true" />
-            <element signature="e#5277#5278#0" expanded="true" />
-            <element signature="e#5301#5302#0" expanded="true" />
-            <element signature="e#5357#5358#0" expanded="true" />
-            <element signature="e#5379#5380#0" expanded="true" />
-            <element signature="e#5412#5413#0" expanded="true" />
-            <element signature="e#5442#5443#0" expanded="true" />
-            <element signature="e#5516#5517#0" expanded="true" />
-            <element signature="e#5550#5551#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1171#1172#0" expanded="true" />
+            <element signature="e#1245#1246#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1313#1314#0" expanded="true" />
+            <element signature="e#1344#1345#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+            <element signature="e#1614#1615#0" expanded="true" />
+            <element signature="e#1644#1645#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1764#1765#0" expanded="true" />
+            <element signature="e#1793#1794#0" expanded="true" />
+            <element signature="e#1819#1820#0" expanded="true" />
+            <element signature="e#1881#1882#0" expanded="true" />
+            <element signature="e#1907#1908#0" expanded="true" />
+            <element signature="e#1944#1945#0" expanded="true" />
+            <element signature="e#1972#1973#0" expanded="true" />
+            <element signature="e#2046#2047#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2140#2141#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="true" />
+            <element signature="e#2249#2250#0" expanded="true" />
+            <element signature="e#2282#2283#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2386#2387#0" expanded="true" />
+            <element signature="e#2420#2421#0" expanded="true" />
+            <element signature="e#2452#2453#0" expanded="true" />
+            <element signature="e#2481#2482#0" expanded="true" />
+            <element signature="e#2552#2553#0" expanded="true" />
+            <element signature="e#2584#2585#0" expanded="true" />
+            <element signature="e#2611#2612#0" expanded="true" />
+            <element signature="e#2635#2636#0" expanded="true" />
+            <element signature="e#2691#2692#0" expanded="true" />
+            <element signature="e#2713#2714#0" expanded="true" />
+            <element signature="e#2745#2746#0" expanded="true" />
+            <element signature="e#2774#2775#0" expanded="true" />
+            <element signature="e#2845#2846#0" expanded="true" />
+            <element signature="e#2877#2878#0" expanded="true" />
+            <element signature="e#2908#2909#0" expanded="true" />
+            <element signature="e#2936#2937#0" expanded="true" />
+            <element signature="e#3004#3005#0" expanded="true" />
+            <element signature="e#3034#3035#0" expanded="true" />
+            <element signature="e#3069#3070#0" expanded="true" />
+            <element signature="e#3101#3102#0" expanded="true" />
+            <element signature="e#3181#3182#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3252#3253#0" expanded="true" />
+            <element signature="e#3282#3283#0" expanded="true" />
+            <element signature="e#3356#3357#0" expanded="true" />
+            <element signature="e#3390#3391#0" expanded="true" />
+            <element signature="e#3418#3419#0" expanded="true" />
+            <element signature="e#3443#3444#0" expanded="true" />
+            <element signature="e#3502#3503#0" expanded="true" />
+            <element signature="e#3526#3527#0" expanded="true" />
+            <element signature="e#3555#3556#0" expanded="true" />
+            <element signature="e#3581#3582#0" expanded="true" />
+            <element signature="e#3643#3644#0" expanded="true" />
+            <element signature="e#3669#3670#0" expanded="true" />
+            <element signature="e#3698#3699#0" expanded="true" />
+            <element signature="e#3724#3725#0" expanded="true" />
+            <element signature="e#3786#3787#0" expanded="true" />
+            <element signature="e#3812#3813#0" expanded="true" />
+            <element signature="e#3843#3844#0" expanded="true" />
+            <element signature="e#3871#3872#0" expanded="true" />
+            <element signature="e#3939#3940#0" expanded="true" />
+            <element signature="e#3969#3970#0" expanded="true" />
+            <element signature="e#4004#4005#0" expanded="true" />
+            <element signature="e#4036#4037#0" expanded="true" />
+            <element signature="e#4116#4117#0" expanded="true" />
+            <element signature="e#4154#4155#0" expanded="true" />
+            <element signature="e#4183#4184#0" expanded="true" />
+            <element signature="e#4209#4210#0" expanded="true" />
+            <element signature="e#4271#4272#0" expanded="true" />
+            <element signature="e#4297#4298#0" expanded="true" />
+            <element signature="e#4328#4329#0" expanded="true" />
+            <element signature="e#4356#4357#0" expanded="true" />
+            <element signature="e#4424#4425#0" expanded="true" />
+            <element signature="e#4454#4455#0" expanded="true" />
+            <element signature="e#4486#4487#0" expanded="true" />
+            <element signature="e#4515#4516#0" expanded="true" />
+            <element signature="e#4586#4587#0" expanded="true" />
+            <element signature="e#4618#4619#0" expanded="true" />
+            <element signature="e#4652#4653#0" expanded="true" />
+            <element signature="e#4683#4684#0" expanded="true" />
+            <element signature="e#4760#4761#0" expanded="true" />
+            <element signature="e#4796#4797#0" expanded="true" />
+            <element signature="e#4826#4827#0" expanded="true" />
+            <element signature="e#4853#4854#0" expanded="true" />
+            <element signature="e#4918#4919#0" expanded="true" />
+            <element signature="e#4946#4947#0" expanded="true" />
+            <element signature="e#4980#4981#0" expanded="true" />
+            <element signature="e#5011#5012#0" expanded="true" />
+            <element signature="e#5088#5089#0" expanded="true" />
+            <element signature="e#5124#5125#0" expanded="true" />
+            <element signature="e#5152#5153#0" expanded="true" />
+            <element signature="e#5176#5177#0" expanded="true" />
+            <element signature="e#5233#5234#0" expanded="true" />
+            <element signature="e#5255#5256#0" expanded="true" />
+            <element signature="e#5282#5283#0" expanded="true" />
+            <element signature="e#5306#5307#0" expanded="true" />
+            <element signature="e#5362#5363#0" expanded="true" />
+            <element signature="e#5384#5385#0" expanded="true" />
+            <element signature="e#5417#5418#0" expanded="true" />
+            <element signature="e#5447#5448#0" expanded="true" />
+            <element signature="e#5521#5522#0" expanded="true" />
+            <element signature="e#5555#5556#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1500,13 +1211,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Matches.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="48" selection-start="177" selection-end="177" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="2" selection-start="949" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="514" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
@@ -1539,114 +1243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="910" selection-end="910" vertical-scroll-proportion="0.0" vertical-offset="343" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ITennisMatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="0" selection-start="1263" selection-end="1263" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1173">
-          <folding>
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-            <element signature="e#1893#1894#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="0" selection-start="3527" selection-end="3527" vertical-scroll-proportion="-3.4" vertical-offset="1819" max-vertical-offset="2873">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1776#1777#0" expanded="true" />
-            <element signature="e#1806#1807#0" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
-            <element signature="e#2143#2144#0" expanded="true" />
-            <element signature="e#2220#2221#0" expanded="true" />
-            <element signature="e#2284#2285#0" expanded="true" />
-            <element signature="e#2333#2334#0" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2455#2456#0" expanded="true" />
-            <element signature="e#2519#2520#0" expanded="true" />
-            <element signature="e#2567#2568#0" expanded="true" />
-            <element signature="e#2611#2612#0" expanded="true" />
-            <element signature="e#2686#2687#0" expanded="true" />
-            <element signature="e#2748#2749#0" expanded="true" />
-            <element signature="e#2796#2797#0" expanded="true" />
-            <element signature="e#2840#2841#0" expanded="true" />
-            <element signature="e#2915#2916#0" expanded="true" />
-            <element signature="e#2977#2978#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="25" selection-start="1198" selection-end="2416" vertical-scroll-proportion="-3.4" vertical-offset="510" max-vertical-offset="1445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1241" selection-end="1241" vertical-scroll-proportion="-2.08" vertical-offset="662" max-vertical-offset="2363">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2091#2092#0" expanded="true" />
-            <element signature="e#2135#2136#0" expanded="true" />
-            <element signature="e#2713#2943#0" expanded="true" />
-            <element signature="e#2938#2939#0" expanded="true" />
-            <element signature="e#3447#3448#0" expanded="true" />
-            <element signature="e#3472#3473#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="16" selection-start="4338" selection-end="4338" vertical-scroll-proportion="0.0" vertical-offset="2407" max-vertical-offset="4165">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3916#3917#0" expanded="true" />
-            <element signature="e#3955#3956#0" expanded="true" />
-            <element signature="e#4029#4030#0" expanded="true" />
-            <element signature="e#4091#4092#0" expanded="true" />
-            <element signature="e#4139#4140#0" expanded="true" />
-            <element signature="e#4179#4180#0" expanded="true" />
-            <element signature="e#4255#4256#0" expanded="true" />
-            <element signature="e#4319#4320#0" expanded="true" />
-            <element signature="e#4365#4366#0" expanded="true" />
-            <element signature="e#4403#4404#0" expanded="true" />
-            <element signature="e#4445#4446#0" expanded="true" />
-            <element signature="e#4468#4469#0" expanded="true" />
-            <element signature="e#4500#4501#0" expanded="true" />
-            <element signature="e#4524#4525#0" expanded="true" />
-            <element signature="e#4563#4564#0" expanded="true" />
-            <element signature="e#4593#4594#0" expanded="true" />
-            <element signature="e#4649#4650#0" expanded="true" />
-            <element signature="e#4693#4694#0" expanded="true" />
-            <element signature="e#4725#4726#0" expanded="true" />
-            <element signature="e#4749#4750#0" expanded="true" />
-            <element signature="e#6922#6923#0" expanded="true" />
-            <element signature="e#6946#6947#0" expanded="true" />
-            <element signature="e#6974#6975#0" expanded="true" />
-            <element signature="e#6998#6999#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="253" column="13" selection-start="6986" selection-end="6986" vertical-scroll-proportion="0.0" vertical-offset="3834" max-vertical-offset="21165">
@@ -1661,39 +1257,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="611" selection-end="611" vertical-scroll-proportion="-2.28" vertical-offset="368" max-vertical-offset="2057">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="5" selection-start="3337" selection-end="3337" vertical-scroll-proportion="-7.84" vertical-offset="1538" max-vertical-offset="5100">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5298#5299#0" expanded="true" />
-            <element signature="e#5325#5326#0" expanded="true" />
-            <element signature="e#6996#6997#0" expanded="true" />
-            <element signature="e#7025#7026#0" expanded="true" />
-            <element signature="e#7069#7070#0" expanded="true" />
-            <element signature="e#7101#7102#0" expanded="true" />
-            <element signature="e#7133#7134#0" expanded="true" />
-            <element signature="e#7162#7163#0" expanded="true" />
-            <element signature="e#7200#7201#0" expanded="true" />
-            <element signature="e#7235#7236#0" expanded="true" />
-            <element signature="e#7561#7562#0" expanded="true" />
-            <element signature="e#7593#7594#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/network/NetworkUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="41" selection-start="346" selection-end="364" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="527">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1735,128 +1303,296 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xbet/generated.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="226" column="5" selection-start="571" selection-end="8807" vertical-scroll-proportion="0.5652174" vertical-offset="3621" max-vertical-offset="84745">
+        <state line="5" column="21" selection-start="241" selection-end="8737" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="84745">
           <folding>
-            <marker date="1396917322981" expanded="false" signature="6581:6623" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="6636:6647" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="6764:6811" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="6854:6988" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="7014:7026" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="10917:10934" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="15406:15417" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="16068:16079" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="17337:17348" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="17881:17892" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="18834:18845" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="19748:19759" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="20291:20302" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="21248:21307" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="21417:21554" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="25847:25897" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="30583:30595" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="30622:30633" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="31126:31147" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="31208:31241" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="31385:31495" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="31509:31520" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="31926:31975" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="35004:35103" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="40756:40810" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="40822:40848" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="50609:50620" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="50731:50748" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="50885:50897" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="51055:51066" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="51177:51194" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="51346:51358" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="51497:51516" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="53091:53106" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="53498:53513" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="53852:53867" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="54222:54237" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="54560:54575" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="54898:54913" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="55366:55381" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="55806:55821" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="56520:56535" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="56875:56890" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="58101:58116" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="58408:58423" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="59171:59186" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="59620:59635" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="62178:62199" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="62254:62287" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="63018:63159" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="63742:63754" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="63781:63792" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="63975:63986" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="64164:64176" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="64203:64214" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="64397:64408" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="64545:64557" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="64584:64595" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="64778:64789" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="64907:65049" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="65389:65404" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="65426:65470" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="65483:65494" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="65687:65695" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="65762:65773" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="65999:66014" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66036:66080" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66093:66104" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66297:66310" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66367:66378" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66604:66619" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66641:66685" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66698:66709" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66902:66915" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="66972:66983" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="76860:76910" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="77665:77683" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="77698:77756" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="78107:78140" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="81042:81091" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="81997:82049" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="82105:82156" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="86425:86443" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="88528:88539" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="88780:88791" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="92096:92106" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="92195:92205" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="92295:92305" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="92392:92402" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="93055:93102" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="93136:93184" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="93485:93532" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="93569:93617" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="93932:93979" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="94017:94065" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="94371:94418" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="94455:94503" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="94832:94879" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="94919:94967" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="99554:99590" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="101060:101075" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="101947:101983" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="103561:103576" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="105382:105397" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="107186:107201" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="113944:113994" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="116309:116337" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="178267:178510" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="178719:178750" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="180279:180310" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="181757:181788" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="182241:182272" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="186333:186364" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="187871:187902" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="189572:189603" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="190005:190036" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="199506:199540" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="199622:199714" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="202886:202898" placeholder="..." />
-            <marker date="1396917322981" expanded="false" signature="203022:203036" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1396917322981" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="13" selection-start="1042" selection-end="1042" vertical-scroll-proportion="0.0" vertical-offset="637" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="40" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1870">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/MatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1093" selection-end="1377" vertical-scroll-proportion="0.0" vertical-offset="592" max-vertical-offset="1343">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.0" vertical-offset="487" max-vertical-offset="1105">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="14" selection-start="4159" selection-end="4159" vertical-scroll-proportion="0.0" vertical-offset="1659" max-vertical-offset="2057">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ScoreboardUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="26" selection-start="1182" selection-end="1182" vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="833">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/ITennisMatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="21" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="33" max-vertical-offset="425">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="49" selection-start="4836" selection-end="4836" vertical-scroll-proportion="0.0" vertical-offset="2226" max-vertical-offset="2567">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Tournament.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="46" selection-start="1011" selection-end="1011" vertical-scroll-proportion="0.0" vertical-offset="576" max-vertical-offset="1190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/be/belgampaul/tennis/domain/tennis/MatchTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="24" selection-start="1886" selection-end="1886" vertical-scroll-proportion="-3.96" vertical-offset="1281" max-vertical-offset="1802">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="80" selection-start="836" selection-end="836" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1479">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/AbstractTennisMatchObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="83" selection-start="2551" selection-end="2551" vertical-scroll-proportion="0.0" vertical-offset="1313" max-vertical-offset="2431">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2091#2092#0" expanded="true" />
+            <element signature="e#2135#2136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="299" column="17" selection-start="9435" selection-end="9435" vertical-scroll-proportion="-6.4" vertical-offset="4753" max-vertical-offset="5100">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5124#5125#0" expanded="true" />
+            <element signature="e#5151#5152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/belgampaul/tennis/domain/tennis/Scoreboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="4" selection-start="2061" selection-end="2061" vertical-scroll-proportion="0.6951673" vertical-offset="952" max-vertical-offset="5338">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4362#4363#0" expanded="true" />
+            <element signature="e#4401#4402#0" expanded="true" />
+            <element signature="e#4475#4476#0" expanded="true" />
+            <element signature="e#4537#4538#0" expanded="true" />
+            <element signature="e#4585#4586#0" expanded="true" />
+            <element signature="e#4625#4626#0" expanded="true" />
+            <element signature="e#4701#4702#0" expanded="true" />
+            <element signature="e#4765#4766#0" expanded="true" />
+            <element signature="e#4811#4812#0" expanded="true" />
+            <element signature="e#4849#4850#0" expanded="true" />
+            <element signature="e#4891#4892#0" expanded="true" />
+            <element signature="e#4914#4915#0" expanded="true" />
+            <element signature="e#4946#4947#0" expanded="true" />
+            <element signature="e#4970#4971#0" expanded="true" />
+            <element signature="e#5009#5010#0" expanded="true" />
+            <element signature="e#5039#5040#0" expanded="true" />
+            <element signature="e#5266#5267#0" expanded="true" />
+            <element signature="e#5290#5291#0" expanded="true" />
+            <element signature="e#7473#7474#0" expanded="true" />
+            <element signature="e#7497#7498#0" expanded="true" />
+            <element signature="e#7525#7526#0" expanded="true" />
+            <element signature="e#7549#7550#0" expanded="true" />
+            <element signature="e#7596#7597#0" expanded="true" />
+            <element signature="e#7630#7631#0" expanded="true" />
+            <element signature="e#7672#7673#0" expanded="true" />
+            <element signature="e#7706#7707#0" expanded="true" />
+            <element signature="e#7747#7748#0" expanded="true" />
+            <element signature="e#7780#7781#0" expanded="true" />
+            <element signature="e#7821#7822#0" expanded="true" />
+            <element signature="e#7854#7855#0" expanded="true" />
+            <element signature="e#7895#7896#0" expanded="true" />
+            <element signature="e#7928#7929#0" expanded="true" />
+            <element signature="e#7969#7970#0" expanded="true" />
+            <element signature="e#8002#8003#0" expanded="true" />
+            <element signature="e#8043#8044#0" expanded="true" />
+            <element signature="e#8076#8077#0" expanded="true" />
+            <element signature="e#8117#8118#0" expanded="true" />
+            <element signature="e#8150#8151#0" expanded="true" />
+            <element signature="e#8191#8192#0" expanded="true" />
+            <element signature="e#8224#8225#0" expanded="true" />
+            <element signature="e#8265#8266#0" expanded="true" />
+            <element signature="e#8298#8299#0" expanded="true" />
+            <element signature="e#8339#8340#0" expanded="true" />
+            <element signature="e#8372#8373#0" expanded="true" />
+            <element signature="e#8413#8414#0" expanded="true" />
+            <element signature="e#8446#8447#0" expanded="true" />
+            <element signature="e#8487#8488#0" expanded="true" />
+            <element signature="e#8520#8521#0" expanded="true" />
+            <element signature="e#8561#8562#0" expanded="true" />
+            <element signature="e#8594#8595#0" expanded="true" />
+            <element signature="e#8639#8640#0" expanded="true" />
+            <element signature="e#8664#8665#0" expanded="true" />
           </folding>
         </state>
       </provider>

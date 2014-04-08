@@ -1,5 +1,6 @@
 package be.belgampaul.tennis.domain;
 
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,13 +34,26 @@ public class MatchTest {
   @Test
   public void testCreateNewPoint() throws Exception {
     int totalPoints = match.getTotalPointsPlayed();
-
-    Point newPoint = match.createNewPoint();
-    System.out.println("totalPoints: " + totalPoints);
-    System.out.println(newPoint);
+    match.createNewPoint();
+//    System.out.println("totalPoints: " + totalPoints);
+//    System.out.println(newPoint);
 
     match.setPlayer1AsPointWinner();
-    System.out.println("totalPoints: " + match.getTotalPointsPlayed());
+    Assert.assertEquals(totalPoints, 1);
+//    System.out.println("totalPoints: " + match.getTotalPointsPlayed());
+  }
+
+  @Test
+  public void testPlayOneGoldenSet(){
+    Point newPoint = match.createNewPoint();
+    for (int i = 0; i < 24; i++) {
+      try {
+        match.setPlayer1AsPointWinner();
+//        match.get
+      } catch (IllegalAccessException e) {
+        e.printStackTrace();
+      }
+    }
   }
 
   @Test

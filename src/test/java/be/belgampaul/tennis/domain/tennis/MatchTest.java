@@ -1,6 +1,7 @@
 package be.belgampaul.tennis.domain.tennis;
 
 import be.belgampaul.tennis.domain.Player;
+import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -12,6 +13,9 @@ import org.junit.Test;
  * Time: 5:44 PM
  */
 public class MatchTest {
+  //logger
+  private static final Logger log = Logger.getLogger(MatchTest.class);
+
   private Match match;
   private Player player1;
   private Player player2;
@@ -20,9 +24,11 @@ public class MatchTest {
   public void setUp() throws Exception {
     // System.out.println("");
     // System.out.println("begin setting up >>>>>");
-    player1 = new Player("i1", "i1");
-    player2 = new Player("i2", "i2");
+    player1 = new Player("Nadal", "Nadal");
+    player2 = new Player("Djokovic", "Djokovic");
     match = new Match(1L, null, player1, player2);
+    match.init(player1, player2);
+    match.setCurrentServer(player1);
     //System.out.println("<<<<< end setting up");
     //System.out.println("");
   }
@@ -39,7 +45,7 @@ public class MatchTest {
 
   @Test
   public void testGetPlayer1() throws Exception {
-    Assert.assertEquals(match.getPlayer1(), new Player("i1", "i1"));
+    Assert.assertEquals(match.getPlayer1(), new Player("Nadal", "Nadal"));
 
   }
 
@@ -50,7 +56,7 @@ public class MatchTest {
 
   @Test
   public void testGetPlayer2() throws Exception {
-    Assert.assertEquals(match.getPlayer2(), new Player("i2", "i2"));
+    Assert.assertEquals(match.getPlayer2(), new Player("Djokovic", "Djokovic"));
   }
 
   @Test
@@ -65,8 +71,6 @@ public class MatchTest {
 
   @Test
   public void testSetCurrentPointWinner() {
-    match.init(player1, player2);
-
 
     for (int i = 0; i < 300; i++) {
       if (match.isCompleted()) {
@@ -78,9 +82,19 @@ public class MatchTest {
       } else {
         match.setCurrentPointWinner(player2);
       }
-      System.out.println(match.getStrictScore());
+      log.debug("sctrict score:" + match.getStrictScore());
     }
 
 
+  }
+
+  @Test
+  public void testPlayOneGoldenSet(){
+    //match.setCurrentServer(player1);
+
+    for (int i = 0; i < 49; i++) {
+      match.setCurrentPointWinner(player1);
+//        match.get
+    }
   }
 }

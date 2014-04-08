@@ -89,6 +89,10 @@ abstract public class AbstractTennisMatchObject<Parent extends ITennisMatch, Chi
 
   @Override
   public Point getCurrentPoint() {
+    if (isMatchCompleted()) {
+      log.info("Match is finished");
+      return null;
+    }
     Child last = null;
     try {
       last = children.getLast();
@@ -139,5 +143,10 @@ abstract public class AbstractTennisMatchObject<Parent extends ITennisMatch, Chi
 
   public LinkedList<Child> getChildren() {
     return children;
+  }
+
+  @Override
+  public Boolean isMatchCompleted() {
+    return getParent().isMatchCompleted();
   }
 }

@@ -45,8 +45,7 @@ public class Match extends AbstractTennisMatchObject {
   }
 
   public Match(Long id, Player player1, Player player2) {
-    super(id, ETennisGameType.STANDARD, player1, player2, "0", "0" );
-
+    this(id, ETennisGameType.STANDARD, player1, player2);
   }
 
   public void setPlayerToServeFirst(Player player) {

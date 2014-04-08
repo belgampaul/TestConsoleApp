@@ -1,5 +1,7 @@
 package be.belgampaul.tennis.domain.tennis;
 
+import be.belgampaul.tennis.domain.Player;
+
 import java.util.ArrayList;
 
 /**
@@ -7,7 +9,7 @@ import java.util.ArrayList;
  * Date: 4/7/14
  * Time: 4:35 AM
  */
-public class ScoreUtils {
+public class ScoreboardUtils {
   public static String convertAdvFormatToNumber(String score) {
     return score.equals("ADV") ? "4" : score.equals("40") ? "3" : score.equals("30") ? "2" : score.equals("15") ? "1" : score.equals("0") ? "0" : score;
   }
@@ -26,5 +28,16 @@ public class ScoreUtils {
       cnt++;
     }
     return score;
+  }
+
+  /**
+   * @param toServe - player to serve
+   * @param player1 - a player, order is not important
+   * @param player2 - a player, order is not important
+   * @return player to receive
+   */
+  public static Player getReceiver(Player toServe, Player player1, Player player2) {
+    return (toServe == null || player1 == null || player2 == null) ? null :
+        player1.equals(toServe) ? player2 : player1;
   }
 }
