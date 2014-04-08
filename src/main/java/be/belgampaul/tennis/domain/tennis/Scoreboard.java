@@ -3,6 +3,7 @@ package be.belgampaul.tennis.domain.tennis;
 import be.belgampaul.tennis.domain.IChild;
 import be.belgampaul.tennis.domain.Player;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -13,6 +14,9 @@ import java.util.LinkedList;
  * Time: 12:01 AM
  */
 public class Scoreboard implements IChild<Match> {
+  //logger
+  private static final Logger log = Logger.getLogger(Scoreboard.class);
+
   private Player previousServerFromScore;
   private Player currentServer;
   public final Player player1;
@@ -62,7 +66,12 @@ public class Scoreboard implements IChild<Match> {
       this.currentScoreAdvFormat = currentScoreAdvFormat;
       String[] scores = getScoreAdvFormatAsArray(currentScoreAdvFormat);
       setScore(scores);
-      System.err.println("NEW SCORE:  " + getCurrentScoreBoardWithPlayers());
+      if (previousScoreAdvFormat == null){
+        log.debug("NEW MATCH detected:  " + getCurrentScoreBoardWithPlayers());
+      } else {
+        log.debug("NEW SCORE detected:  " + getCurrentScoreBoardWithPlayers());
+
+      }
       return true;
     }
     return false;

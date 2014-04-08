@@ -1,13 +1,15 @@
 package be.belgampaul.tennis.domain.tennis;
 
 import be.belgampaul.tennis.domain.Player;
+import org.apache.log4j.Logger;
 
-public class Point
-    extends AbstractTennisMatchObject<Game, Point> {
-  private Integer scoreBeforePointPlayer1 = Integer.valueOf(0);
-  private Integer scoreBeforePointPlayer2 = Integer.valueOf(0);
-  private Integer scoreAfterPointPlayer1 = Integer.valueOf(0);
-  private Integer scoreAfterPointPlayer2 = Integer.valueOf(0);
+public class Point extends AbstractTennisMatchObject<Game, Point> {
+  //logger
+  private static final Logger log = Logger.getLogger(Point.class);
+  private Integer scoreBeforePointPlayer1 = 0;
+  private Integer scoreBeforePointPlayer2 = 0;
+  private Integer scoreAfterPointPlayer1 = 0;
+  private Integer scoreAfterPointPlayer2 = 0;
 
   public Point(Long id, Game game) {
     super(id, game);
@@ -21,7 +23,8 @@ public class Point
     this.scoreAfterPointPlayer2 = scoreAfterPointPlayer2;
   }
 
-  protected void calculateResult() {
+  @Override
+  protected void calculateResultLocal() {
     Player winner = getWinner();
     Player player1 = getParent().getParent().getParent().getPlayer1();
     Player player2 = getParent().getParent().getParent().getPlayer2();
@@ -37,11 +40,11 @@ public class Point
   }
 
   public Player getPlayer1() {
-    return ((Game) getParent()).getPlayer1();
+    return getParent().getPlayer1();
   }
 
   public Player getPlayer2() {
-    return ((Game) getParent()).getPlayer2();
+    return getParent().getPlayer2();
   }
 
   public Player getCurrentServer() {
@@ -152,5 +155,10 @@ public class Point
       throw new UnsupportedOperationException("current server is unkown. unable to change winner.");
     }
     super.validateWinner(winner);
+  }
+
+  @Override
+  protected void calculateResult() {
+    log.debug("protected void calculateResult() called. This method should not be implemented and is an indication of faulty design.");
   }
 }

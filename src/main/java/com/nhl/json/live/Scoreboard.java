@@ -1,3 +1,7 @@
+package com.nhl.json.live;
+
+import com.nhl.json.live.Game;
+
 import java.util.List;
 
 /**

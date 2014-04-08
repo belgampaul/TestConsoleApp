@@ -35,7 +35,7 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
     scoreboard.setCurrentScoreAdvFormat(v.getStrictScore());
 
     String strictScore = v.getStrictScore();
-    System.err.println(scoreboard.getCurrentScoreBoardWithPlayers());
+    log.debug(scoreboard.getCurrentScoreBoardWithPlayers());
     List<String> scores = Arrays.asList(strictScore.split(";"));
     int ms1 = Integer.parseInt(scores.get(0).split(":")[0]);
     int ms2 = Integer.parseInt(scores.get(0).split(":")[1]);
@@ -103,8 +103,8 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
     }
     int cnt = 0;
     cnt = 1;
-    System.out.println(getNotStrictScore());
-    System.out.println("");
+    log.debug(getNotStrictScore());
+    log.debug("");
   }
 
   private Player getCurrentReceiver() {
@@ -116,7 +116,7 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
 
   private int addNewGames(int ss1, Set set, LinkedList<Game> children1, int cnt, Player winner) {
     for (int j = 0; j < ss1; j++) {
-      Game e = new Game((long) cnt++, set);
+      Game e = new Game((long) ++cnt, set);
       e.setWinner(winner);
       children1.add(e);
     }
@@ -125,14 +125,13 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
 
   public boolean refresh(Value matchFromJsonData) {
     String strictScoreJsonData = matchFromJsonData.getStrictScore();
-    if (scoreboard.setCurrentScoreAdvFormat(strictScoreJsonData)) {
+    if (scoreboard.setCurrentScoreAdvFormat(strictScoreJsonData) || scoreboard.getPreviousScoreAdvFormat() == null) {
       return false;
     } else {
-      System.err.println("score should be updated");
       Player winner = scoreboard.findPreviousPointWinner();
       if (winner != null) {
         setCurrentPointWinner(winner);
-        log.debug("NotSctritScore" + getNotStrictScore());
+        log.debug("Not strict score after setting point winner: " + getNotStrictScore());
         return true;
       }
     }
@@ -155,6 +154,10 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
   public Player getCurrentServerFromScore() {
     currentServer = scoreboard.getCurrentServer();
     return currentServer;
+  }
+
+  public Scoreboard getScoreboard() {
+    return scoreboard;
   }
 
   public enum EScoreParts {

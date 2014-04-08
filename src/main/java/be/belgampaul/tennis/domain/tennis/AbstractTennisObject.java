@@ -2,6 +2,7 @@ package be.belgampaul.tennis.domain.tennis;
 
 import be.belgampaul.tennis.domain.DomainObject;
 import be.belgampaul.tennis.domain.Player;
+import org.apache.log4j.Logger;
 
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
@@ -12,6 +13,8 @@ import java.beans.PropertyChangeSupport;
  * Time: 3:47 AM
  */
 abstract public class AbstractTennisObject<Parent> extends DomainObject implements ITennis {
+  //logger
+  private static final Logger log = Logger.getLogger(AbstractTennisObject.class);
   protected Parent parent;
   protected PropertyChangeSupport changes = new PropertyChangeSupport(this);
   private Player winner;
@@ -38,8 +41,13 @@ abstract public class AbstractTennisObject<Parent> extends DomainObject implemen
   final public void setWinner(Player winner) {
     validateWinner(winner);
     this.winner = winner;
-    calculateResult();
+    calculateResultLocal();
+    log.debug("setting winner for " + this.getClass().getSimpleName() + " " + this.getId());
     changes.firePropertyChange("winner", null /*no winner before*/, winner);
+  }
+
+  protected void calculateResultLocal() {
+    //should be overriden only by point
   }
 
   protected void validateWinner(Player winner) {

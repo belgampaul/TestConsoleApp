@@ -1,3 +1,5 @@
+package com.nhl.json.live;
+
 import org.codehaus.jackson.annotate.JsonIgnoreProperties;
 
 /**
@@ -199,7 +201,7 @@ public class Game {
 
   @Override
   public String toString() {
-    return "Game{" +
+    return "com.nhl.json.live.Game{" +
         "id=" + id +
         ", gs=" + gs +
         ", ts='" + ts + '\'' +
