@@ -18,10 +18,6 @@ public class Tournament extends AbstractTennisObject<Tournament> implements ITen
 
   }
 
-
-
-
-
   @Override
   public Player getPlayer1() {
     throw new UnsupportedOperationException();

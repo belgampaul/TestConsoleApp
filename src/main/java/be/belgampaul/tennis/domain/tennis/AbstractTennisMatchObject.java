@@ -30,6 +30,7 @@ abstract public class AbstractTennisMatchObject<Parent extends ITennisMatch, Chi
   protected Player toReceiveFirst;
   protected Player currentServer;
 
+  //
   protected LinkedList<Child> children;
 
 
@@ -42,9 +43,6 @@ abstract public class AbstractTennisMatchObject<Parent extends ITennisMatch, Chi
   public Player getPlayer1() {
     return parent.getPlayer1();
   }
-
-
-
 
   @Override
   public Player getPlayer2() {

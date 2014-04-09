@@ -118,6 +118,7 @@ public class Match extends AbstractTennisMatchObject<Tournament, Set> {
 
   public boolean refresh(Value matchFromJsonData) {
     String strictScoreJsonData = matchFromJsonData.getStrictScore();
+    Logger.getLogger("be.belgampaul.tennis.log.xbet").info(strictScoreJsonData);
     if (scoreboard.setCurrentScoreAdvFormat(strictScoreJsonData) || scoreboard.getPreviousScoreAdvFormat() == null) {
       return false;
     } else {

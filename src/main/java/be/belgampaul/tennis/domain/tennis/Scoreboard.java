@@ -305,4 +305,12 @@ public class Scoreboard implements IChild<Match> {
   public LinkedList<String> getScoreLog() {
     return scoreLog;
   }
+
+  public boolean isPlayer1Serving() {
+    return !(currentServer == null || currentServer.equals(player2)) && currentServer.equals(player1);
+  }
+
+  public boolean isPlayer2Serving() {
+    return !(currentServer == null || currentServer.equals(player1)) && currentServer.equals(player2);
+  }
 }

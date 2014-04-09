@@ -3,13 +3,15 @@ import be.belgampaul.tennis.domain.tennis.Match;
 import be.belgampaul.tennis.domain.tennis.Matches;
 import be.belgampaul.tennis.network.NetworkUtils;
 import com.nhl.json.live.Game;
-import com.xbet.LiveFeed;
 import com.nhl.json.live.Scoreboard;
+import com.xbet.LiveFeed;
 import com.xbet.Value;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 import org.codehaus.jackson.map.ObjectMapper;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.List;
 
@@ -28,11 +30,33 @@ public class Main {
   public static void main(String[] args) {
     //System.out.println(DailyInfoWSSerivce.getExchangeRateToRUB(ECurrency.USD.ISO4217_alpha3));
 
+//    testXBetTennisLiveFeedFromSite();
+    long startTime = System.currentTimeMillis();
+    for (int i = 0; i < 1; i++) {
+      try {
+        try (BufferedReader br = new BufferedReader(new FileReader("D:/log/xbetJsonLog_test.log"))) {
+          for (String line; (line = br.readLine()) != null; ) {
+            // process the line.
+            //log.debug(line);
+            testXbetSoccerLiveFeed(line);
+            Thread.sleep(5000);
+          }
+          // line is not visible here.
+        }
+      } catch (Exception e) {
+        e.printStackTrace();
+      }
+
+    }
+    System.err.println(System.currentTimeMillis() - startTime + " ms");
+  }
+
+  private static void testXBetTennisLiveFeedFromSite() {
     try {
       while (true) {
         //testNHLJsonScoreboard();
 
-        testXbetSoccerLiveFeed();
+        testXbetSoccerLiveFeed(NetworkUtils.getWebPageAsString(HttpAddresses.HTTPS_WWW_1XBET_COM_LIVE_FEED_GET1X2_SPORT_ID_4_COUNT_50_LNG_EN));
 
         for (Match match : matches.values()) {
           //System.out.println(match);
@@ -48,11 +72,11 @@ public class Main {
     }
   }
 
-  private static void testXbetSoccerLiveFeed() throws IOException {
+
+  private static void testXbetSoccerLiveFeed(String next) throws IOException {
     ObjectMapper mapper = new ObjectMapper();
-    String url = HttpAddresses.HTTPS_WWW_1XBET_COM_LIVE_FEED_GET1X2_SPORT_ID_4_COUNT_50_LNG_EN;
-    String next;
-    next = NetworkUtils.getWebPageAsString(url);
+
+    Logger.getLogger("be.belgampaul.tennis.log.xbet.json").info(next);
     LiveFeed li = mapper.readValue(next, LiveFeed.class);
 
     List<Value> value = li.getValue();
